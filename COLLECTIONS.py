@@ -1,0 +1,92 @@
+#from collections import namedtuple
+#from collections import deque
+#from collections import ChainMap
+#from collections import Counter
+#from collections import OrderedDict
+from collections import defaultdict
+
+
+#TUPLE()  TUPLE()  TUPLE()  TUPLE()  TUPLE()  TUPLE()  TUPLE()  TUPLE()
+
+# a = namedtuple('info', 'name, courses')
+# rye = a('RYAN', 'BSCS')
+#
+# print(rye) #the console shows that the 'info' was put outside the parenthesis because i t has no next word like  'name, courses'
+#            # if you change it to 'name', 'courses' it will be erorr
+#
+# print('')
+#
+# a = namedtuple('info', 'name, courses')
+# rye = a._make(['JOHN', 'PhD'])
+# print(rye) #it same the output console below
+#
+# a = namedtuple('info', 'name, courses')
+# rye = a('JOHN', 'PhD')
+# print(rye)
+
+#DEQUE()  DEQUE()  DEQUE()  DEQUE()  DEQUE()  DEQUE()  DEQUE()  DEQUE()
+
+# b = ['r','y','a','n','b','r','i','z']
+# bb = deque(b)
+# print(bb) #out: deque(['r', 'y', 'a', 'n', 'b', 'r', 'i', 'z'])
+#
+# bb.append("BSCS") #append meaning to add in the last row of array / bb.appendleft("BSCS") the 'BSCS' will put in first row
+# print(bb)
+#
+# bb.pop() #.pop is to remove the last value of row / bb.popleft the first row value will remove
+# print(bb)
+
+#CHAINMAP()  CHAINMAP()  CHAINMAP()  CHAINMAP()  CHAINMAP()  CHAINMAP()  CHAINMAP() CHAINMAP()
+
+# a = {1: 'ryan', 2: 'bscs'}
+# b = {3: 'ML' , 4: 'AI'}
+#
+# a1 = ChainMap(a,b)
+# print(a1)
+
+#COUNTER()  COUNTER()  COUNTER()  COUNTER()  COUNTER()  COUNTER()  COUNTER()  COUNTER()
+
+# a = [1,1,1,8,9,9,3,3,2,4,4,4,4,5,6,8,12]
+# b = Counter(a)
+# print(b) #it shows the numbers on how many it repeats
+#
+# print(list(b.elements())) #it shows the number are arrange but not in numerical order
+# print(b.most_common()) #it shows the number are categorize with ()
+#
+# sub = {4:2 , 12:1}
+# print(b.subtract(sub))
+# print(b.most_common()) #literally subtract the specific range
+
+#ORDEREDICT()  #ORDEREDICT()  #ORDEREDICT()  #ORDEREDICT()  #ORDEREDICT()  #ORDEREDICT()  #ORDEREDICT()
+
+# r = OrderedDict()
+# r[1] = 'r'
+# r[2] = 'y'
+# r[3] = 'a'
+# r[4] = 'n'
+#
+# print(r)
+# print(r.items()) #same output in print(r)
+# print(r.keys()) #it shows the array number
+#
+# r[3] = 'aa'
+# print(r)
+
+#DEFAULTDICT()  #DEFAULTDICT()  #DEFAULTDICT()  #DEFAULTDICT()   #DEFAULTDICT()  #DEFAULTDICT()
+
+d = defaultdict(int)
+
+d[1] = 'rye'
+d[2] = 'bscs'
+
+print(d)
+print(d[2])
+
+a = {1:'JOHN', 2:'RYAN'}
+print(a[2])
+
+
+
+
+
+
