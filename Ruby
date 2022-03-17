@@ -119,3 +119,21 @@ else
   puts "END"
 
 end  
+•••
+
+popoff = 'stop'
+random = '" "
+bscs = " "
+
+while random != popoff
+       puts "Hi, how are you feeling?"
+       random = gets.chomp()
+
+       puts "Do you want to ask again?
+       bscs = gets.chomp()
+end
+if bscs or random = popoff
+   puts "all good"
+else
+   puts "wanna play more?"
+end
