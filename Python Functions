@@ -9,16 +9,16 @@ function1() # calling a function. you can repeat it.
 ##############################################
 print('')
 
-def functionMultiply(nums):
-    return 2 * nums # 2 is given multply to parameter, you can put the word nums again. 
+def function2(nums):
+    return 3 * nums # 3 is given multply to parameter, you can put the word nums again. 
     
-a = functionMultiply(3) # this 3 is corresponding the parameter of functionMultiply
+a = function2(8) # this 8 is corresponding the parameter of functionMultiply
 print(a)
 
-b = functionMultiply(4) # if the parameter is empty it turns an error
+b = function2(4) # if the parameter is empty it turns an error
 print(b)
 
-c = functionMultiply(8+2)
+c = function2(8+2)
 print(c)
 
 
@@ -36,12 +36,12 @@ print(rye)
 print('')
 
 
-def function(x):
+def function4(x):
     print('x')
     print('still in the function')
     return 3*x
     
-ryee = function(4)
+ryee = function4(4)
 print(ryee)
 """
 function(4)
@@ -68,7 +68,8 @@ def function5(sus):
     print('amogus')
     
 function5(100) 
-# the print(sus) become 100 because of function5(100)
-# it has no return statement and def function5(sus): and print(sus) has same name.
 
-
+"""
+the print(sus) become 100 because of function5(100)
+it has no return statement and def function5(sus): and print(sus) has same name.
+"""
