@@ -1,0 +1,52 @@
+def bmi_calculator(name, height_m, weight_kg):
+    
+    bmi = weight_kg / (height_m ** 2)
+    print('bmi: ')
+    print(bmi)
+    
+    if(bmi < 25) :
+        return name +' is not overweight'
+    else :
+        return name +' is overweight'
+    
+name1 = 'rye'
+height_m1 = 4
+weight_kg1 = 64
+    
+name2 = 'ryan'
+height_m2 = 3.8
+weight_kg2 = 71
+    
+name3 = 'john'
+height_m3 = 5
+weight_kg3 = 58
+
+print('RESULTS')
+result1 = bmi_calculator(name1, height_m1, weight_kg1)
+result2 = bmi_calculator(name2, height_m2, weight_kg2)
+result3 = bmi_calculator(name3, height_m3, weight_kg3)
+
+"""
+The result1, result2, result3
+are only shown the computations from def parameters
+def bmi_calculator(name, height_m, weight_kg):
+"""
+print('')
+
+print('NAMES')
+print(result1)
+print(result2)
+print(result3)
+
+"""
+The output shown the names with condition statements result
+"""
+print('')
+
+print('MERGE')
+print(result1)
+result1 = bmi_calculator(name1, height_m1, weight_kg1)
+print(result2)
+result2 = bmi_calculator(name2, height_m2, weight_kg2)
+print(result3)
+result3 = bmi_calculator(name3, height_m3, weight_kg3)
