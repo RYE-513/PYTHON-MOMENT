@@ -1,0 +1,30 @@
+
+
+rye = [40, 56, 'ryan', 'amogus']
+print(rye)
+
+rye.append('tite') # appends means add
+print(rye)
+
+rye.append('nigga')
+print(rye)
+
+rye.pop() # remove the last item of array
+print(rye)
+
+print(rye[2]) # index 0 first number
+
+rye[2] = "ryan briz"
+print(rye)
+
+print('')
+
+camo = ['silver', 'gold', 'damascus']
+
+new = camo[0] # silver
+camo[0] = camo[2] # 'silver' turns as 'damascus'
+camo[2] = new # 'damascus' turns as 'silver'
+print(camo) # ['damascus', 'gold', 'silver']
+
+
+
