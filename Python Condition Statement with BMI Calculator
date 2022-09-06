@@ -1,0 +1,32 @@
+rye = 9
+bscs = 8
+
+
+if rye < bscs :
+        print('rye is less than bscs')
+else :
+    if rye == bscs :
+        print('rye is equal to bscs')
+    else :
+        print('rye is greater than bscs')
+        
+        
+    # BMI Calculator
+    
+    
+    name = 'RYE'
+    height = 4.191
+    weight = 64
+
+    bmi = weight / (height ** 2) # this is cube simplified as (height * height * height)
+    print(bmi)
+    print(round(bmi))
+    
+    if (bmi < 25) :
+        print(name)
+        print("this person is not overweight")
+    else :
+        print(name)
+        print("this person is overweight")
+  
+        
