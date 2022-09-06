@@ -1,0 +1,74 @@
+def function1():
+    print('RYE')
+    print('BSCS')
+
+print('Outside Function') # white space indentation not allign to print('RYE') and print('BSCS')
+function1() # calling a function. you can repeat it.
+
+
+##############################################
+print('')
+
+def functionMultiply(nums):
+    return 2 * nums # 2 is given multply to parameter, you can put the word nums again. 
+    
+a = functionMultiply(3) # this 3 is corresponding the parameter of functionMultiply
+print(a)
+
+b = functionMultiply(4) # if the parameter is empty it turns an error
+print(b)
+
+c = functionMultiply(8+2)
+print(c)
+
+
+##############################################
+print('')
+
+def function3(x, y):
+    return x + y
+    
+rye = function3(32, 2)
+print(rye)
+
+
+##############################################
+print('')
+
+
+def function(x):
+    print('x')
+    print('still in the function')
+    return 3*x
+    
+ryee = function(4)
+print(ryee)
+"""
+function(4)
+
+'x' will only print
+'still in the function' will only print
+
+
+ryee = function(4)
+print(ryee)
+
+'x' will only print
+'still in the function' will only print
+'12' will print because of 'ryee'
+"""
+    
+    
+##############################################
+print('')
+
+
+def function5(sus):
+    print(sus)
+    print('amogus')
+    
+function5(100) 
+# the print(sus) become 100 because of function5(100)
+# it has no return statement and def function5(sus): and print(sus) has same name.
+
+
