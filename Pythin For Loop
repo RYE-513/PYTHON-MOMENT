@@ -1,0 +1,49 @@
+# FOR LOOP SAMPLE
+
+camo = ["silver", "gold", "damascus"]
+
+for printIT in camo:
+    print(printIT) # if you print again it will repeat each word
+    print(printIT)
+    
+
+# FOR LOOP ADDING ALL INT ARRAYS
+print('')
+
+nums = [43, 56, 90, 88, 13]
+total = 0 # this statement is constant to 0
+
+for printNums in nums:
+    print(printNums)
+    total = total + printNums # this syntax is to add all the numbers in array
+print(total) # if this print(total) align in total = total + printNums the output will be puzzled.
+    
+
+# FOR LOOP RANGES
+print('')
+
+c = list(range(1, 5)) # 5 is excluded
+print(c) # [1, 2, 3, 4] - list collection mode []
+
+
+for i in range(1,5):
+    print(i) # 1  2  3  4
+
+# ADDING ALL INT ITEMS
+total2 = 0
+for i in range(1,5):
+    total2 += total2 + i
+print(i)
+
+print(list(range(1,10))) # direct print
+
+# FOR LOOP MULTIPLE SPECIFIC ITEM INDEX
+print('')
+
+total3 = 0
+for i in range(1,8):
+    if i % 3 == 0:
+        total3 += i
+print(total3)
+
+
