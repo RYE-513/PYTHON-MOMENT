@@ -1,0 +1,24 @@
+class Robot:
+    # def __init__(self, givenName, givenColor, givenWeight):
+    #     self.name = givenName
+    #     self.color = givenColor
+    #     self.weight = givenWeight
+        
+    def introduce_self(self):
+        print("My name is " + self.name) # this in Java
+        
+r1 = Robot()
+r1.name = "Rye"
+r1.color = "Red"
+r1.weight = 64
+
+r2 = Robot()
+r2.name = "Ryan"
+r2.color = "Red"
+r2.weight = 65
+
+r2.introduce_self()
+r1.introduce_self()
+
+# r1 = Robot("Rye", "Red", 64)
+# r2 = Robot("Ryan", "Blue", 40)
