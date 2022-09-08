@@ -18,14 +18,30 @@ print(total2) # so 1 + 2 + 3 + 4 + 5
 
 print()
 
-# FOR LOOP ADDING ALL ITEMS IN ARRAY
+# WHILE LOOP ADDING ALL ITEMS IN ARRAY WITHT NEGATIVE NUMBER
 
-given_list = [5, 4, 4, 3, 1, -2 ,-3 ,-5]
+given_list = [5, 4, 4, 3, 1, -2 ,-3 ,-5] # theres no error if theres one number with negative number
 
 total3 = 0
-i = 0
+i = 0 # first index
 while given_list[i] > 0:
-    total3 += given_list[i]
-    i += 1
+    total3 += given_list[i] # add the first element '5' given_list[i]
+    i += 1 # then proceed to '4' next item
 print(total3) # all the items is equal to 17
+
+# WHILE LOOP ADDING ALL ITEMS IN ARRAY WITHOUT NEGATIVE NUMBER
+
+given_list2 = [5, 4, 4, 3, 1]
+# IndexError out of range if the array item has no negative number
+
+total4 = 0
+ai = 0 # first index
+while ai < len(given_list2) and given_list2[ai] > 0: # nothing exist in index 5
+# ai < len(given_list2) is added
+    total4 += given_list2[ai]
+    ai += 1 # then proceed to '4' next item
+print(total4)
+
+
+
 
