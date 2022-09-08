@@ -1,0 +1,21 @@
+# FOR LOOP PRINT THE ARRAY ITEMS 1ST METHOD
+
+a = ["apple", "banana", "orange"]
+
+for element in a:
+    print(element)
+    
+print()
+
+# FOR LOOP PRINT THE ARRAY ITEMS 2ND METHOD
+
+for i in range(len(a)):
+    print(a[i])
+    
+print()
+
+# FOR LOOP PRINT THE ARRAY ITEMS MULTIPLE ACCORDING TO INDEX
+
+for ii in range(len(a)):
+    for j in range(ii +1):
+        print(a[ii])
