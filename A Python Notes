@@ -1,0 +1,49 @@
+___
+Python Programming Language
+• created by Guido Van Rossum a dutch programmer
+• object-oriented, general purpose and high level language
+• easier for beginners and popular
+• short syntax
+
+• came from the idea of ABC interface with Amoeba O.S.
+• 'Python' name came from the "Monty Python's flying circus" BBC'S TV Show
+
+• used for
+1. Web Development
+2, Machine Learning
+3. Data Science
+4. Scripting
+5. Game Development
+___
+2 TYPES OF PROGRAMMING
+___
+• A. Compiled Language • Faster and more efficient and manually compiled
+
+LANGUAGE
+↓ *compiling*
+MACHINE CODE
+↓
+READY TO RUN
+
+••• The Compiled programming will never let you run the code if there is an error in program.
+___
+• B. Interpreted Language • Run through a program line by line and execute each command
+
+LANGUAGE
+↓
+READY TO RUN | *interpreting*
+↓
+VIRTUAL MACHINE | *interpreting*
+↓
+MACHINE CODE
+
+••• just start running the code even if there are errors in program
+••• highlighting the reason behind issue.
+___
+DYNAMIC VS STATIC LANGUAGE
+
+Dynamic - no need to declare data type
+age = 21
+Static - need to declare data type these are Java, C++
+int age = 21
+___
