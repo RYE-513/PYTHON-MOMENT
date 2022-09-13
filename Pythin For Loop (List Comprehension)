@@ -1,0 +1,42 @@
+
+
+
+b = []
+
+b.append(10) # append means "to add'"
+b.append(20)
+
+print(b)
+
+
+# FOR LOOP - List mutiply
+
+a = [1, 3, 5, 7, 9, 11]
+c = []
+
+
+for x in a:
+    c.append(x * 2) # mutiply the ist item 'a' and turn the answer at c = []
+print(c) # [2, 6, 10, 14, 18, 22]
+
+d = [x * 2 for x in a] # same output above but this is simpified syntax
+print(d) # [2, 6, 10, 14, 18, 22]
+
+e1 = []
+for x in range(1, 7):
+    e1.append(x ** 2)
+print(e1) # [1, 4, 9, 16, 25, 36]
+
+e2 = [x ** 2 for x in range(1, 7)]
+print(e2) # [1, 4, 9, 16, 25, 36]
+
+for x in range(6, 0, -1):
+    print(x) # 6, 5, 4, 3, 2, 1
+
+f1 = []
+for x in range (6, 0, -1):
+    f1.append(x ** 2)
+print(f1) # [36, 25, 16, 9, 4, 1]
+
+f2 = [x ** 2 for x in range(6, 0, -1)]
+print(f2) # [36, 25, 16, 9, 4, 1]
