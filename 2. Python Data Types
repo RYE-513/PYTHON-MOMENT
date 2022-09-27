@@ -1,37 +1,30 @@
-**INDENTATION - adding whitespace before a statement**
-
 NUMERIC TYPE
-• Integer  a = 10
-• Complex Number a = 10j
-• Float/Double a = 10.0
+• Integer | a = 10
+• Complex Number | a = 10j
+• Float/Double | a = 10.0
 
 SEQUENCE TYPE
-• Boolean = True/False
-• Strings = "Text"
-• Characters "T"
+• Boolean | True/False
+• Strings | "Text"
+• Characters | 'T'
 
-ARRAY TYPE
+COLLECTIONS TYPE
 • List []
 • Tuple ()
 • Set {}
 • Dictionary {:}
 
 OPERATORS
-• Arithmetic Operators + - * / ** // %
-• Relational Operators < > <=  >= !=
-• Logical Operators "AND" "OR" "NOT"
-• Identify Operator "IS" "IS NOT"
-• Membership Operator "IN" "NOT IN"
-• Bitwise Operator |  ^ ~  <<
-• Walrus Operator :=
-
-name = "Rye"
-age = 21
-weight = 63.5
+• Arithmetic Operators | +  -  *  /  **  //  %
+• Relational Operators | < > <= >= !=
+• Logical Operators | "and" "or" "not"
+• Identify Operator | "is" "is not"
+• Membership Operator | "in" "not in"
+• Bitwise Operator | ^  ~  <<
+• Walrus Operator | :=
 
 #. to know what is the data type you encode
 
 print(type(name)) # <class 'string'>
 print(type(age)) # <class 'int'>
 print(type(weight)) # <class 'float'>
-___
