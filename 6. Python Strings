@@ -66,9 +66,9 @@ print('and cook rice'.endswith('rice')) # True
 print('oh hi there'.find('i')) # 4  | 'i' is fourth letter. exclude index and space is not counted. 
 print('oh hi there'.count('e')) # 2 | theres 2 'e' in this sentence
 
-*STRING FORMATTING*
+STRING FORMATTING
 
-name1 = 'John'
+name1 = 'Rye'
 name2 = 'Ryan'
 
 print(f'Hello there {name1} and {name2}') # method 1
@@ -77,7 +77,7 @@ print('Hello there %s and %s'%(name1, name2)) # method 3
 
 #. Method 1 is practically and easy to use
 
-*STRING QOUTATION*
+STRING QOUTATION
 
 a = """While I make a move
 Well I've been coming closer to the end
@@ -86,4 +86,4 @@ As you take your stand
 Well maybe understand it when you walk
 Down these old and empty streets"""
 
-print(a) # the triple qoutes is use when the comment is very long to avoid error
+print(a) # the triple qoutes is called 'docstings' it used when the comment is long
