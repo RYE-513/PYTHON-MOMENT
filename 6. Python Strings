@@ -1,22 +1,25 @@
-*GETTING LENGTH len() OF STRING*
-name = "John Rye BSCS"
-print(len(name)) #13
+GETTING LENGTH len() OF STRING
 
-*REPLACING STRING*
+name = "Rye Ryan BSCS"
+print(len(name)) # 13
+
+REPLACING STRING
+
 name = "RYE BSCS"
 new = name.replace("RYE", "RYAN")
 print(new) # RYAN BSCS
 
 text = "Hello world, i love world, i love everything!"
-new = text.replace("world", "RYAN", 1) # the '1' is first same word
+new = text.replace("world", "RYAN", 1) # the '1' is first same word | this is not index to 0
 print(new) # "Hello RYAN, i love world, i love everything!"
 
-print('Help me'.replace('me', 'you'))
+print('Help me'.replace('me', 'you')) # Help You
 
-*UPPERCASE MODE*
+UPPERCASE MODE
+
 text = "ryan"
 x = text.capitalize()
-print(x) # Ryan -  first letter of a word
+print(x) # Ryan - first letter of a word
 
 text = "ryan"
 x = text.upper()
@@ -24,42 +27,44 @@ print(x) # RYAN
 
 text = "ryan is mediocre student studying computer science on his own"
 x = text.upper() # or simply direct as print(text.upper())
-print(x)
+print(x) # RYAN IS MEDIOCRE STUDENT STUDYING COMPUTER SCIENCE ON HIS OWN
 
-*LOWERCASE MODE*
+LOWERCASE MODE
 
 text = "RYAN IS MEDIOCRE STUDENT STUDYING PROGRAMMING ON HIS OWN"
-print(text.lower())
+print(text.lower()) # "ryan is mediocre student studying computer science on his own"
 
-*CONNECTING VARIABLE*
+CONNECTING VARIABLES
+
 x = "Light Blue"
-text = "My Favourite color is " +x # , x
+text = "My Favourite color is " +x # or you can as ", x"
 print(text)
 
-*ESCAPE SEQUENCING OF '' and " "*
+ESCAPE SEQUENCING OF '' and " "
+
 text = 'Let's learn math rock'
 print(text) # syntax error
 
 text = 'Let\'s learn math rock' # or "Let's learn math rock"
 print(text)
 
-*STRING MEMBERSHIP OPERATOR*
+STRING MEMBERSHIP OPERATOR
 
 word = 'Math Rock and Dream Pop are my favourite genre'
-print(word)
-print('Dream'in word) #true
-print('Punk'in word) #false
+print(word) # Math Rock and Dream Pop are my favourite genre
+print('Dream' in word) # true
+print('Punk' in word) # false
 
-*OTHERS*
+OTHERS
 
-print('On an island'.strip('d')) # remove letter from a word
-print('but life is good!'.split()) # turns into List format
+print('on an island'.strip('d')) # on an islan | remove specific letter from a word
+print('but life is good!'.split()) # ['but', 'life', 'is', 'good!'] | turns into List format
 
 print('Need to make fire'.startswith('Need')) # True 
-print('and cook rice'.endswith('rice')) #True 
+print('and cook rice'.endswith('rice')) # True 
 
-print('oh hi there'.find('i')) # 4 letter not index 
-print('oh hi there'.count('e')) # 2 letters on a sentence
+print('oh hi there'.find('i')) # 4  | 'i' is fourth letter. exclude index and space is not counted. 
+print('oh hi there'.count('e')) # 2 | theres 2 'e' in this sentence
 
 *STRING FORMATTING*
 
