@@ -1,23 +1,22 @@
-*MATH SYNTAX*
+MATH SYNTAX
 
-print(pow(5, 2)) # 25, same with 5 ** 2
-print(abs(-50)) # "abs" means absolute integer vice versa
-print(divmod(5, 2)) # method takes two numbers as arguments and returns their quotient and remainder 
+print(pow(5, 2)) # out: 25 | 25, same as 5 ** 2
+print(abs(-50)) # out: 50 | "abs" means absolute integer vice versa
+print(divmod(5, 2)) # out: (2, 1) | method takes two numbers as arguments and returns their quotient and remainder 
 
-*BIN. HEX. OCT. CONVERTER*
+BINARY. HEXADECIMAL. OCTAL. CONVERTER
 
 print(bin(250)) # 0b11111010 - binary format
 print(hex(250)) # Oxfa - hexadecimal format
 print(oct(250)) # 0o372 - octal format
 
-*ROUNDING OFF*
+ROUNDING OFF
 
 print(round(5.468, 2)) # 5.47
 
 pi = 14.15926535897
-
 two_decimals = round(pi, 2)
 three_decimals = round(pi, 3)
 
-print(two_decimals)
-print(three_decimals)
+print(two_decimals) # 14.16
+print(three_decimals) # 14.159
