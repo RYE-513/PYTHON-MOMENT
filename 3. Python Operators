@@ -1,71 +1,80 @@
-# #ARITHMETIC OPERATOR
-#
-# # a = 5
-# # a += 5 # '+=' meaning add to it self number e.g. 5 + 5 = 10
-#
-# aa = 45 #they are connected
-# aa += 45 #they are connected  or 'aa = aa + 45'
-# print(aa)
-#
-# bb = 5
-# bb **= 5
-# print(bb)
-#
-# #COMPARISON OPERATOR
-#
-# '''
-# a == b //equal
-# a != b // not equal
-# a > b // greater than
-# a < b // less than
-# a >= b // greater than or equal to
-# a <= b // less than or equal to
-# '''
-#
-# a = 52
-# b = 60
-#
-# result = a == b
-# print(result)
-#
-# result = a != b
-# print(result)
-#
-# result = a < b
-# print(result)
-#
-# #LOGICAL OPERATOR
-# #A. CONDITION OR CONTROL STATEMENTS
-#
-# if a == b:
-#     print('NICE')
-# elif a < b:          #'elif' means else if, another if declaration or true statements
-#     print('SUS')
-# else :
-#     print('AMOGUS')
-#
-# #B. AND, OR, NOT    // IN JAVA &&,||,!
-#
-# '''
-# AND - MAJORITY FALSE
-# OR - MAJORITY TRUE
-# NOT - VICE VERSA
-# '''
-#
-# rye_balance = 58
-# bscs_balance = 64
-#
-# #                       T,                         T,                     F               = false: because of 'and'
-# result1 = (rye_balance < bscs_balance) and (bscs_balance != 64) and (rye_balance <= 678)
-# print(result1)
-#
-# #                       F,                 T,                  T,                  = true: because of 'or'
-# result2 = (541 <= rye_balance) or (65 > bscs_balance) or (not(bscs_balance != 64))
-# print(result2)
-#
-# #                       F,                 T,                  T,                  = true: because of 'or' is first to declare operator than 'and'
-# result2 = (541 <= rye_balance) or (65 > bscs_balance) and (not(bscs_balance != 64))
-# print(result2)
+ARITHMETIC OPERATOR
+
++ | addition
+- | subtraction
+* | multiplication
+/ | division
+** | exponent
+// | floor division
+% | modulus
+:= | walrus
+      
+& | Biwise and
+| | Biwise or
+~ | Biwise not
+^ | Biwise xor
+
+a = 5
+a += 5 
+print(a) # '+=' is 5 + 5 = 10
+
+b = 5
+b **= 5
+print(b) # '**=' is 5 ** 5 = 3125
+
+COMPARISON OPERATOR
+
+a > b  | greater than
+a < b  | less than
+a >= b | greater than or equal to
+a <= b | less than or equal to
+a == b | equal
+a != b | not equal
+
+a = 8
+b = 10
+
+result = a == b
+print(result) # false
+
+result = a != b
+print(result) # true
+
+result = a < b
+print(result) # true
+
+#LOGICAL OPERATOR
+#A. CONDITION OR CONTROL STATEMENTS
+
+if a == b:
+    print('NICE')
+elif a < b:          #'elif' means else if, another if declaration or true statements
+    print('SUS')
+else :
+    print('AMOGUS')
+
+#B. AND, OR, NOT    // IN JAVA &&,||,!
+
+'''
+AND - MAJORITY FALSE
+OR - MAJORITY TRUE
+NOT - VICE VERSA
+'''
+
+rye_balance = 58
+bscs_balance = 64
+
+#                       T,                         T,                     F               = false: because of 'and'
+result1 = (rye_balance < bscs_balance) and (bscs_balance != 64) and (rye_balance <= 678)
+print(result1)
+
+#                       F,                 T,                  T,                  = true: because of 'or'
+result2 = (541 <= rye_balance) or (65 > bscs_balance) or (not(bscs_balance != 64))
+print(result2)
+
+#                       F,                 T,                  T,                  = true: because of 'or' is first to declare operator than 'and'
+result2 = (541 <= rye_balance) or (65 > bscs_balance) and (not(bscs_balance != 64))
+print(result2)
 
 #C. IDENTIFY OPERATORS
 
