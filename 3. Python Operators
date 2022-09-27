@@ -1,4 +1,6 @@
+////////////////////////////////////////////////////////////////////////////////
 ARITHMETIC OPERATOR
+////////////////////////////////////////////////////////////////////////////////
 
 + | addition
 - | subtraction
@@ -22,7 +24,9 @@ b = 5
 b **= 5
 print(b) # '**=' is 5 ** 5 = 3125
 
+////////////////////////////////////////////////////////////////////////////////
 COMPARISON OPERATOR
+////////////////////////////////////////////////////////////////////////////////
 
 a > b  | greater than
 a < b  | less than
@@ -43,8 +47,11 @@ print(result) # true
 result = a < b
 print(result) # true
 
-#LOGICAL OPERATOR
-#A. CONDITION OR CONTROL STATEMENTS
+////////////////////////////////////////////////////////////////////////////////
+LOGICAL OPERATOR
+////////////////////////////////////////////////////////////////////////////////
+
+A. CONDITION/CONTROL STATEMENTS
 
 if a == b:
     print('NICE')
@@ -53,7 +60,7 @@ elif a < b:          #'elif' means else if, another if declaration or true state
 else :
     print('AMOGUS')
 
-#B. AND, OR, NOT    // IN JAVA &&,||,!
+B. AND, OR, NOT OPERATORS
 
 '''
 AND - MAJORITY FALSE
@@ -73,34 +80,34 @@ result2 = (541 <= rye_balance) or (65 > bscs_balance) or (not(bscs_balance != 64
 print(result2)
 
 #                       F,                 T,                  T,                  = true: because of 'or' is first to declare operator than 'and'
-result2 = (541 <= rye_balance) or (65 > bscs_balance) and (not(bscs_balance != 64))
-print(result2)
+result3 = (541 <= rye_balance) or (65 > bscs_balance) and (not(bscs_balance != 64))
+print(result3)
 
-#C. IDENTIFY OPERATORS
+C. IDENTIFY OPERATORS
 
-aaa = 10
-bbb = 30
+rye = 10
+rye_2 = 30
 
 list1 = [10,20,30]
 list2 = [10,20,30]
 
-print(aaa is list1)   # false: 'is' consider as 'false' but 'in' consider as 'true' which is vice versa.
+print(rye is list1)   # false: 'is' consider as 'false' but 'in' consider as 'true' which is vice versa.
 print(list1 is list2) # false: yes they are both same values, but they are different object 'variable name'.
 print(list1 is list1) # true: same variable which is object.
 
 print(list1 is not list1) # false: vice versa answer
-print('')
 
-#D. MEMBERSHIP OPERATORS
+D. MEMBERSHIP OPERATORS
 
 print(aaa in list1)  # true: 'in' consider as 'true' but 'is' consider as 'false' which is vice versa.
 print(list1 in list2) # false: yes they are both same values, but they are different object 'variable name'.
 print(list1 == list2) # true: same equal value
 print('')
 
-#E. BITWISE OPERATORS |  & - and, | - or
+E. BITWISE OPERATORS |  '&' is and, '|' is or
 
 print(10&12) # AND
+
 ''' BINARY CONVERT
       8   4  2  1      
 10 = (1)  0  1  0
@@ -110,6 +117,7 @@ print(10&12) # AND
 '''
 
 print(10|12) # OR
+
 ''' BINARY CONVERT
       8   4  2  1      
 10 =  1  0  1  (0) become 1  0  1 (1) become 1  1  1  1
@@ -120,13 +128,8 @@ print(10|12) # OR
 * the answer is '14'
 '''
 
-print(10 >> 2) # RIGHT SHIFT
-'''
-      8   4   2    1      
-10 =  1   0  (1)  (0)  = out 2:  *the binary of '10' which is 1 0 1 0 the (1) (0) 1 0 will disregard because it's left shift
-'''
-
 print(10 << 2) # LEFT SHIFT
+
 '''
 10 = 1 0 1 0 THEN ADD 2 zero of end because of (10 << '2')
 finally it become 1 0 1 0 (0 0)
@@ -135,5 +138,11 @@ finally it become 1 0 1 0 (0 0)
 1   0   1   0   0   0  = 32 and 8 are in '1' so 32+8 = 40
 '''
 
-print(10^2) # XOR * sets each bit to 1 if only one of the bits is 1.
+print(10 >> 2) # RIGHT SHIFT
 
+'''
+      8   4   2    1      
+10 =  1   0  (1)  (0)  = out 2:  *the binary of '10' which is 1 0 1 0 the (1) (0) 1 0 will disregard because it's left shift
+'''
+
+print(10^2) # XOR * sets each bit to 1 if only one of the bits is 1.
