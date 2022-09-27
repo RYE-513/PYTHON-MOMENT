@@ -46,17 +46,9 @@ str() - used to convert integer into a string
 complex(real,imag) - This function converts real numbers to complex
 chr(43) - '+' converts number to its corresponding ASCII character
 
-INTEGER TO COMPLEX
-
-c = complex(1,2)
-print('After converting integer to complex number : ', end='')
-print(c) # After converting integer to complex number : (1+2j)
-
-INTEGER CONVERT TO STRING
-
-c = str("a")
-print('After converting integer to string : ', end='')
-print(c) # After converting integer to string : a
+///////////////////////////////////////////////////////////////////////////////
+CONVERTING
+///////////////////////////////////////////////////////////////////////////////
 
 TUPLE TO DICTIONARY
 
@@ -66,42 +58,50 @@ c = dict(tup)
 print('After converting tuple to dictionary : ', end='')
 print(c) # After converting tuple to dictionary : {'a': 1, 'f': 2, 'g': 3}
 
+INTEGER TO COMPLEX
 
-INTEGER CONVERT TO STRING
+c = complex(1,2)
+print('After converting integer to complex number : ', end='')
+print(c) # After converting integer to complex number : (1+2j)
+
+INTEGER TO STRING
 
 age = 21
 txt = "my age is " +age
 print(txt) # syntax error
 
-#. PROPER SYNTAX
+A. PROPER SYNTAX
 
 age = 21
 age = str(age)
 txt = "my age is " +age
 print(txt)
 
-#. PRACTICALITY
+B. PRACTICALITY
 
 age = 21
 print("my age is", age)  # +age and , age are both same
 
+STRING TO INTEGER
 
-*FLOAT TO INTEGER*
-x = 4.55
-x = int(x)
-print(x) # the .55 will be remove
-
-*STRING TO INTEGER*
 x = "40"
 sum = int(x) + 60
 print(sum)
 
-*INTEGER TO FLOAT*
+INTEGER TO FLOAT
+
 x = 4
 x = float(x) #. returns as 4.0
 print(x)
 
-*STRING TO FLOAT*
+STRING TO FLOAT
+
 x = "4.3"
 sum = float(x) + 6.5
 print(sum)
+
+FLOAT TO INTEGER
+
+x = 4.55
+x = int(x)
+print(x) # the .55 will be remove
