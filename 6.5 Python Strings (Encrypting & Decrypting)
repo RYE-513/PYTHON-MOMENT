@@ -1,0 +1,17 @@
+# ENCRYPTING MODE
+
+a = 'this is a secret'
+print(a)
+
+print(a[::-1]) # terces a si siht | backward
+print(a.replace (' ', '|space_word|')) # thisE8isE8aE8secret | every <space> become '|space_word|'
+
+a = '|start_word|'+a
+print(a) # |start_word|this is a secret
+print(a[::-1]) # terces a si siht|drow_trats| | updated backward version
+
+# DECRYPTING MODE
+
+print(a[::]) # back to unreverse original sentence
+print(a.replace('|space_word|', ' ')) # vice versa
+
