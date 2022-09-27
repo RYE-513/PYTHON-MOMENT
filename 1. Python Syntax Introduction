@@ -1,3 +1,4 @@
+#. Indentation - adding whitespace before a statement
 #. , end=' ' - to print two statements in one line
 
 print('RYAN ', end = '')
