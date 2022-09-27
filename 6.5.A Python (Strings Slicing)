@@ -1,13 +1,14 @@
-**[start:end:step]**
+# [start:end:step]
+
 sentence = 'RYE BSCS PHD'
 
 print(sentence) # RYE BSCS PHD
 print(sentence[1::]) # YE BSCS PHD
 print(sentence[:1:]) # R
-print(sentence[::1]) # RYE BSCS PHD - nothing changed
+print(sentence[::1]) # RYE BSCS PHD | nothing changed
 print(sentence[-1::]) # D
 print(sentence[:-1:]) # RYE BSCS PH
-print(sentence[::-1]) # DHP SCSB EYR - backward
+print(sentence[::-1]) # DHP SCSB EYR | backward
 
 print (sentence [1:1:]) # nothing
 print (sentence [1::1]) # YE BSCS PHD
@@ -27,14 +28,14 @@ print(sentence[6]) # it will shown the 6th index of sentence
 print(sentence [-1]) # it will shown the end of index of sentence
 print(sentence [2:5]) # the 2 is the second index and the 5 is the fifth index but the fifth will be turn to 4th and it was shown.
 
-*OTHER EXAMPLE*
+# OTHER EXAMPLE
 
 word = "i can't feel my face"
 
-print(word[4]) #n
-print(word[-1]) #e
-print(word[2:5]) #can
-print(word[0:10:3]) #iate
+print(word[4]) # n
+print(word[-1]) # e
+print(word[2:5]) # can
+print(word[0:10:3]) # iate
 print(word[:]) # i can't feel my face
 print(word[1:]) # can't feel my face
 print(word[:1]) # i
