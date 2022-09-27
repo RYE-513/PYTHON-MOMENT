@@ -1,0 +1,84 @@
+*GETTING LENGTH len() OF STRING*
+name = "John Rye BSCS"
+print(len(name)) #13
+
+*REPLACING STRING*
+name = "RYE BSCS"
+new = name.replace("RYE", "RYAN")
+print(new) # RYAN BSCS
+
+text = "Hello world, i love world, i love everything!"
+new = text.replace("world", "RYAN", 1) # the '1' is first same word
+print(new) # "Hello RYAN, i love world, i love everything!"
+
+print('Help me'.replace('me', 'you'))
+
+*UPPERCASE MODE*
+text = "ryan"
+x = text.capitalize()
+print(x) # Ryan -  first letter of a word
+
+text = "ryan"
+x = text.upper()
+print(x) # RYAN
+
+text = "ryan is mediocre student studying computer science on his own"
+x = text.upper() # or simply direct as print(text.upper())
+print(x)
+
+*LOWERCASE MODE*
+
+text = "RYAN IS MEDIOCRE STUDENT STUDYING PROGRAMMING ON HIS OWN"
+print(text.lower())
+
+*CONNECTING VARIABLE*
+x = "Light Blue"
+text = "My Favourite color is " +x # , x
+print(text)
+
+*ESCAPE SEQUENCING OF '' and " "*
+text = 'Let's learn math rock'
+print(text) # syntax error
+
+text = 'Let\'s learn math rock' # or "Let's learn math rock"
+print(text)
+
+*STRING MEMBERSHIP OPERATOR*
+
+word = 'Math Rock and Dream Pop are my favourite genre'
+print(word)
+print('Dream'in word) #true
+print('Punk'in word) #false
+
+*OTHERS*
+
+print('On an island'.strip('d')) # remove letter from a word
+print('but life is good!'.split()) # turns into List format
+
+print('Need to make fire'.startswith('Need')) # True 
+print('and cook rice'.endswith('rice')) #True 
+
+print('oh hi there'.find('i')) # 4 letter not index 
+print('oh hi there'.count('e')) # 2 letters on a sentence
+
+*STRING FORMATTING*
+
+name1 = 'John'
+name2 = 'Ryan'
+
+print(f'Hello there {name1} and {name2}') # method 1
+print('Hello there {} and {}'.format(name1, name2)) # method 2
+print('Hello there %s and %s'%(name1, name2)) # method 3
+
+#. Method 1 is practically and easy to use
+
+*STRING QOUTATION*
+
+a = """While I make a move
+Well I've been coming closer to the end
+Of these old and empty streets
+As you take your stand
+Well maybe understand it when you walk
+Down these old and empty streets"""
+
+print(a) # the triple qoutes is use when the comment is very long to avoid error
