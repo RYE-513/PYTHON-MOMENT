@@ -1,0 +1,15 @@
+#. INDIRECT INPUT
+
+name = input("Name: ")
+age = input("Age: ")
+course = input("Course: ")
+
+print(name)
+print(age)
+print(course)
+
+#. DIRECT INPUT
+
+print(input("Name: "))
+print(input("Course: "))
+print(input("Age: "))
