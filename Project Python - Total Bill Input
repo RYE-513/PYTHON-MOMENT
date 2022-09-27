@@ -1,0 +1,52 @@
+total_bill = float(input("Input the number of Total Bills: "))
+guests = int(input("Input the number of Guests: "))
+
+bill_per_person = total_bill / guests
+bill_per_person = round(bill_per_person, 2)
+
+print(f"Each persons pays {bill_per_person}")
+
+"""
+EXPLANATION
+
+float(input()) - put the data type first before the input() it use to execute the specific data type
+
+bill_per_person - it divides the input answer from total_bill and guests then it rounds off
+"""
+*SIMPLIFIED*
+
+total_bill = 23.60
+guests = 3
+
+bill_per_person = total_bill / guests
+print(bill_per_person) # 7.86666..7
+
+bill_per_person = round(bill_per_person, 2)
+print (bill_per_person) # 7.87
+
+___
+
+children = input("number of children: ")
+balance = input("Account Balance: ")
+
+balance = float(balance) + (500 * int(children)) # put data type beside balance to avoid error
+print(balance)
+
+balance = 10 + (500 * 2)
+
+
+print("BAND PROFIT")
+
+time = int(input("Hours of playing on a gig:"))
+mem = input("Number of Band Members")
+
+total_arep = time / mem
+total_arep = round(total_arep, 2)
+
+print(total_arep)
+
+# 
+
+
+
+
