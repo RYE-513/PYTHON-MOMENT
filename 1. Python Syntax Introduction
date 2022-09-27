@@ -1,0 +1,16 @@
+#. , end=' ' - to print two statements in one line
+
+print('RYAN ', end = '')
+print('BSCS')
+out: RYAN BSCS
+
+age = 34
+age = age + 1
+print (age)
+
+#. (/n) new line
+#. (/t) adds a tab
+
+type() - to know the data type**
+len()- to know the length of strings**
+isdigit() - string method is used to check if all the characters in the string are digit values or not.
