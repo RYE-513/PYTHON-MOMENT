@@ -1,4 +1,6 @@
+///////////////////////////////////////////////////////////////////////////////
 2 TYPES OF TYPE CONVERSIONS
+///////////////////////////////////////////////////////////////////////////////
 
 • Implicit Type Conversion - automatically changed one data type to another.
 
@@ -22,8 +24,6 @@ print("Int z convert as binary: " +zz)
 x = float(14) #. int 14 convert as float and it turns as 14.0
 print("Int x convert as float: " +x) 
 
-
-"""
 EXPLANATION:
 
 The x = '100010' is integer type but it turns as String
@@ -33,114 +33,45 @@ f = float(s) adding decimal number at the end of given 's' value
 
 end=' ' this code is to merge to two print in one line
 
-3. ord() - convert char to int | ord('b') = 98
-4. hex() - int to hex string | hex(5) = 0x5
-5. oct() - int to octal string | ord(8) = 0o10
+///////////////////////////////////////////////////////////////////////////////
+CONVERSION
+///////////////////////////////////////////////////////////////////////////////
 
-#.  Initializing Integer
-s = '4'
+ord() - convert char to int | ord('b') = 98
+hex() - int to hex string | hex(5) = 0x5
+oct() - int to octal string | ord(8) = 0o10
 
-#. Printing char converting to int
-c = ord(s)
+dict() - This function is used to convert a tuple of order (key,value) into a dictionary
+str() - used to convert integer into a string
+complex(real,imag) - This function converts real numbers to complex
+chr(43) - '+' converts number to its corresponding ASCII character
 
-print('After converting character to integer : ',end='')
-print(c)
-
-#. Printing integer converting to hexadecimal string
-c = hex(56)
-print('After converting 56 to hexadecimal string: ',end='')
-print(c)
-
-#/. Printing integer converting to Octal String
-c = oct(56)
-
-print('After converting 56 to Octal string: ',end='')
-print(c)
-
-"""
-SIMPLIFIED:
-
-num = '4' #this int number need to declare as string
-con = ord(num)
-print(con)
-
-con1 = hex(56)
-print(con1)
-
-con2 = oct(56)
-print(con2)
-"""
-
-9. dict() - This function is used to convert a tuple of order (key,value) into a dictionary
-10. str(): used to convert integer into a string
-11. complex(real,imag) - This function converts real numbers to complex
-
-#. Initializing Integers
-a = 1
-b = 2
-
-#. Initializing Tuple
-
-tup = (('a', 1), ('f', 2), ('g', 3))
-
-#. Printing Integer converting to complex number
+INTEGER TO COMPLEX
 
 c = complex(1,2)
 print('After converting integer to complex number : ', end='')
-print(c)
+print(c) # After converting integer to complex number : (1+2j)
 
-#. Printing Integer converting to string
+INTEGER CONVERT TO STRING
 
-c = str(a)
+c = str("a")
 print('After converting integer to string : ', end='')
-print(c)
+print(c) # After converting integer to string : a
 
-#. Printing Tuple conveting to expression dictionary
+TUPLE TO DICTIONARY
+
+tup = (('a', 1), ('f', 2), ('g', 3))
 
 c = dict(tup)
 print('After converting tuple to dictionary : ', end='')
-print(c)
+print(c) # After converting tuple to dictionary : {'a': 1, 'f': 2, 'g': 3}
 
-"""
-SIMPLIFIED:
 
-c = complex(1,2)
-printr(c)
-out: (1+2j) the 1,2 become 1+2 then 'j' at the end of converting into complex
+INTEGER CONVERT TO STRING
 
-c = str(d)
-print(c)
-out: 'd' is the fourth letter of alphabet
-
-tup = (('a', 1), ('f', 2), ('g', 3))
-c = dict(tup)
-print(c)
-out: {'a': 1, 'f': 2, 'g': 3} the tuple convert into dictionary collection
-"""
-
-12. chr(number) - converts number to its corrsponding ASCII character
-
-#. Convert ASCII value to characters
-a = chr(76)
-b = chr(77)
-
-print(a)
-print(b)
-
-----
-
-**if you concatenate or combine a string and a number, you will get synatx error.**
-a = "ryan"
-b = 36
-print(a + b)
-
-**INTEGER CONVERT TO STRING**
-
-#. SYNTAX ERROR
-
-#. age = 21
-#. txt = "my age is " +age
-#. print(txt)
+age = 21
+txt = "my age is " +age
+print(txt) # syntax error
 
 #. PROPER SYNTAX
 
@@ -152,18 +83,8 @@ print(txt)
 #. PRACTICALITY
 
 age = 21
-print("my age is", age)  # +age) and , age) are both same
+print("my age is", age)  # +age and , age are both same
 
-#. TUPLE MODE
-
-age = 21
-age = str(age)
-txt = "my age is " +age 
-print(txt)
-
-#. if you put "," not "+"
-#. txt = "my age is ", 
-#. age ('my age is ', '21')
 
 *FLOAT TO INTEGER*
 x = 4.55
