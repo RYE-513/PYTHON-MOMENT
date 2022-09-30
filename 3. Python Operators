@@ -2,14 +2,14 @@
 ARITHMETIC OPERATOR
 ////////////////////////////////////////////////////////////////////////////////
 
-+ | addition
-- | subtraction
-* | multiplication
-/ | division
-** | exponent
-// | floor division
-% | modulus
-:= | walrus
++ | Addition
+- | Subtraction
+* | Multiplication
+/ | Division
+** | Exponent "multiply by itself"
+// | Floor Division / Truncation "vice versa of modulas, disregard the remainder, whole number only"
+% | Modulus "getting only the remainder of divide number"
+:= | Walrus
       
 & | Biwise and
 | | Biwise or
