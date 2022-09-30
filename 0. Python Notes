@@ -13,3 +13,17 @@ USED FOR
 • Data Science
 • Scripting
 • Game Development
+
+What is an object?
+In Python, everything is an object
+
+x = "My age is "
+y = 21
+print(x, y)
+
+age = 21
+print("My age is "+age)
+
+In this example, the fruits variable contains three strings
+fruits = ['bananas', 'apples', 'grapes']
+print(fruits)
