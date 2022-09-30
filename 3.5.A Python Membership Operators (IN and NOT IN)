@@ -1,0 +1,27 @@
+
+D. MEMBERSHIP OPERATORS
+
+print(aaa in list1)  # true: 'in' consider as 'true' but 'is' consider as 'false' which is vice versa.
+print(list1 in list2) # false: yes they are both same values, but they are different object 'variable name'.
+print(list1 == list2) # true: same equal value
+print('')
+
+• used to check if a sequence is present in an object like strings, lists. etc.
+• used to check whether a sequence or value is present in an object or not
+
+• IN operator - returns "True" if a sequence or value is present in an object
+
+text = "i love python programming"
+print("love" in text) # True
+
+fruits = ["bananas", "apples", "grapes"]
+
+print("grapes" in fruits) # True
+print("lemons" in fruits) # False
+
+• NOT IN operator - returns "True" if a sequence or value is NOT present in an object
+
+fruits = ["bananas", "apples", "grapes"]
+
+print("grapes" not in fruits) # False
+print("lemons" not in fruits) # True
