@@ -1,31 +1,37 @@
-
-
+BITWISE OPERATORS
 ____________________
-BITWISE OPERATORS '&' is and, '|' is or
+BITWISE AND '&'
+____________________
 
-print(10&12) # AND
+print(10 & 12)
 
-''' BINARY CONVERT
+BINARY CONVERT
       8   4  2  1      
 10 = (1)  0  1  0
 12 = (1)  1  0  0
 
-* the answer is '8' because the 1 are same align with 10 and 12.
-'''
+The answer is '8' because the 1 are same align with 10 and 12.
 
-print(10|12) # OR
+____________________
+BITWISE OR '|'
+____________________
 
-''' BINARY CONVERT
+print(10|12)
+
+BINARY CONVERT
       8   4  2  1      
-10 =  1  0  1  (0) become 1  0  1 (1) become 1  1  1  1
-12 =  1  1  0  (0) become 1  1  0 (1) become 1  1  1  1
+10 =  1  0  1  (0) become 1  0  1 (1) then 1  1  1  1
+12 =  1  1  0  (0) become 1  1  0 (1) then 1  1  1  1
 
-* the zero both allign will become 1 
+* the zero both allign will become '1' 
 * it turning all in '1'
 * the answer is '14'
-'''
 
-print(10 << 2) # LEFT SHIFT
+____________________
+BITWISE LEFT SHIFT '<<'
+____________________
+
+print(10 << 2)
 
 '''
 10 = 1 0 1 0 THEN ADD 2 zero of end because of (10 << '2')
