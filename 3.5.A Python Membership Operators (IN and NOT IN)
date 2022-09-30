@@ -1,13 +1,19 @@
-
-D. MEMBERSHIP OPERATORS
-
-print(aaa in list1)  # true: 'in' consider as 'true' but 'is' consider as 'false' which is vice versa.
-print(list1 in list2) # false: yes they are both same values, but they are different object 'variable name'.
-print(list1 == list2) # true: same equal value
-print('')
-
+MEMBERSHIP OPERATORS
 • used to check if a sequence is present in an object like strings, lists. etc.
 • used to check whether a sequence or value is present in an object or not
+
+rye = 20
+
+list1 = [10,20,30]
+list2 = [10,20,30]
+
+print(rye in list1)  # true: 'in' consider as 'true' but 'is' consider as 'false' which is vice versa.
+print(list1 in list2) # false: yes they are both same values, but they are different object 'variable name'.
+print(list1 == list2) # true: same equal value
+
+____________________
+SIMPLIFIED
+____________________
 
 • IN operator - returns "True" if a sequence or value is present in an object
 
