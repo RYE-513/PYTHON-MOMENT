@@ -30,12 +30,15 @@ print(b) # '**=' is 5 ** 5 = 3125
 COMPARISON OPERATOR
 ////////////////////////////////////////////////////////////////////////////////
 
-a > b  | greater than
-a < b  | less than
-a >= b | greater than or equal to
-a <= b | less than or equal to
-a == b | equal
-a != b | not equal
+A comparison operator comapares its operands and returns a Boolean value True or False
+it can be used to compare strings, numbers, Booleans and other objects
+
+> | Greater than
+< | Less than
+>= | Greater than or equal to
+<= | Less than or equal to
+== | Equality
+!= | Not Equal / Inequality
 
 a = 8
 b = 10
@@ -48,6 +51,20 @@ print(result) # true
 
 result = a < b
 print(result) # true
+
+print(13==13) # True
+print(15!=8) # True
+print(6<8) # True
+print(18>21) # False
+____________________________________
+SAMPLE: CONDITION/CONTROL STATEMENTS
+____________________________________
+if a == b:
+    print('NICE')
+elif a < b:          #'elif' means else if, another if declaration or true statements
+    print('SUS')
+else :
+    print('AMOGUS')
 
 ////////////////////////////////////////////////////////////////////////////////
 ASSIGNMENT OPERATOR
@@ -63,9 +80,9 @@ OPERATOR      EXAMPLE         SAME AS
 %=            x %= 5		 x = x % 5
 //=           x //= 5	       x = x // 5
 
-
+____________________________________
 SAMPLES
-
+____________________________________
 x = 4
 x += 3 # 4+3
 print(x) # 7
@@ -83,22 +100,29 @@ print(x) # hello rye!
 LOGICAL OPERATOR
 ////////////////////////////////////////////////////////////////////////////////
 
-A. CONDITION/CONTROL STATEMENTS
+and | Logical and
+or  | Logical or
+not | Logical not
 
-if a == b:
-    print('NICE')
-elif a < b:          #'elif' means else if, another if declaration or true statements
-    print('SUS')
-else :
-    print('AMOGUS')
+'and' is majority FALSE*
+• T and F is F
+• F and F is F
+• T and T is T
+• T and T and T and F is F
 
-B. AND, OR, NOT OPERATORS
+'or' is majority TRUE*
+• T or F is T
+• F or F is F
+• T or T is T
+• T or T or T or F is T
 
-'''
-AND - MAJORITY FALSE
-OR - MAJORITY TRUE
-NOT - VICE VERSA
-'''
+'not' is the vice versa*
+• True become False
+• False become True
+
+____________________________________
+SAMPLE 1
+____________________________________
 
 rye_balance = 58
 bscs_balance = 64
@@ -115,66 +139,36 @@ print(result2)
 result3 = (541 <= rye_balance) or (65 > bscs_balance) and (not(bscs_balance != 64))
 print(result3)
 
-C. IDENTIFY OPERATORS
+____________________________________
+SAMPLE 2
+____________________________________
 
-rye = 10
-rye_2 = 30
+LOGICAL AND
 
-list1 = [10,20,30]
-list2 = [10,20,30]
+x = 4
+num2 = (x > 3) and (8 < x)
+print(num2) # False
 
-print(rye is list1)   # false: 'is' consider as 'false' but 'in' consider as 'true' which is vice versa.
-print(list1 is list2) # false: yes they are both same values, but they are different object 'variable name'.
-print(list1 is list1) # true: same variable which is object.
+num = (5 == 5) and (4 == 4)
+print(num) # True
 
-print(list1 is not list1) # false: vice versa answer
+LOGICAL OR
 
-D. MEMBERSHIP OPERATORS
+num = (5 == 5) or (4 == 5)
+print(num) # True
 
-print(aaa in list1)  # true: 'in' consider as 'true' but 'is' consider as 'false' which is vice versa.
-print(list1 in list2) # false: yes they are both same values, but they are different object 'variable name'.
-print(list1 == list2) # true: same equal value
-print('')
+num2 = (10 > 5) or (4 < 8)
+print(num2) # True
 
-E. BITWISE OPERATORS |  '&' is and, '|' is or
+num3 = (10 > 20) or (40 < 30)
+print(num3) # False
 
-print(10&12) # AND
+LOGICAL NOT
 
-''' BINARY CONVERT
-      8   4  2  1      
-10 = (1)  0  1  0
-12 = (1)  1  0  0
+print(not(False)) # True
 
-* the answer is '8' because the 1 are same align with 10 and 12.
-'''
+expr = not(10 > 20)
+print(expr) # True
 
-print(10|12) # OR
-
-''' BINARY CONVERT
-      8   4  2  1      
-10 =  1  0  1  (0) become 1  0  1 (1) become 1  1  1  1
-12 =  1  1  0  (0) become 1  1  0 (1) become 1  1  1  1
-
-* the zero both allign will become 1 
-* it turning all in '1'
-* the answer is '14'
-'''
-
-print(10 << 2) # LEFT SHIFT
-
-'''
-10 = 1 0 1 0 THEN ADD 2 zero of end because of (10 << '2')
-finally it become 1 0 1 0 (0 0)
-
-32  16  8   4   2   1 
-1   0   1   0   0   0  = 32 and 8 are in '1' so 32+8 = 40
-'''
-
-print(10 >> 2) # RIGHT SHIFT
-
-'''
-      8   4   2    1      
-10 =  1   0  (1)  (0)  = out 2:  *the binary of '10' which is 1 0 1 0 the (1) (0) 1 0 will disregard because it's left shift
-'''
-
-print(10^2) # XOR * sets each bit to 1 if only one of the bits is 1.
+expr = not(10 == 10)
+print(expr) # False
