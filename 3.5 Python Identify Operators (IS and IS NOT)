@@ -1,0 +1,48 @@
+PYTHON IDENTIFY OPERATORS
+• used to compare two values to determine if they point on the same object
+• used to tell whether operands point to the same object or not
+
+IS
+- "is" operator is completely same as "="
+- it returns "True" is when both operands point to the same object
+
+IS NOT
+- "is not" operator is completely same as "!="
+- it returns "True" when both operands do NOT point to the same object
+
+rye = 10
+rye_2 = 30
+
+list1 = [10,20,30]
+list2 = [10,20,30]
+
+print(rye is list1)   # False | 'is' consider as 'false' but 'in' consider as 'true' which is vice versa.
+print(list1 is list2) # False | yes they are both same values, but they are different object 'variable name'.
+print(list1 is list1) # True | same variable which is object.
+
+print(list1 is not list1) # False: vice versa answer
+
+____________________
+SIMPLIFIED
+____________________
+
+"is" operator returns "true" if both operands point on same object
+
+x = [1,2,3]
+y = [1,2,3]
+
+#. print(x is y) # This is "False" because they are different object of variable name even they are same values
+
+x = [1,2,3]
+y = [1,2,3]
+z = x
+
+#. print(x is z) # True because "z" copy the same Identity of "x"
+
+x = [1,2,3]
+y = [1,2,3]
+
+print(x == y) # True
+print(x is y) # False
+
+#. "==" and "is" are different operator. "==" means "x" is equal to "y"
