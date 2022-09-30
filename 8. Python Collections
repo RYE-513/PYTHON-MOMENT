@@ -1,0 +1,40 @@
+CONTAINERS
+- Containers are objects that contain objects
+- Containers are also called collections
+are objects that contain objects
+
+LIST [  ]
+- organize
+- can add more data
+- can duplicate
+
+0 JOHN
+1 RYE
+2 BRIZ
+3 BSCS
+4 AMOGUS
+
+- 0 index is the first number
+- it's changeable
+
+SET {  }
+- unique
+- mixed set and not organize
+- can't add more data
+- can't duplicate
+
+DICTIONARY { : }
+- organize
+- unorder
+- KEY and VALUE
+
+TUPLE (  )
+- not changeable / vice versa of list
+- can't add more data
+- less memory than List
+
+LIST • [1,2,3]
+SET • {1,2,3}
+DICTIONARY • {'a':1,'b':2,'c':3}
+TUPLE • (1,2,3)
+
