@@ -1,0 +1,148 @@
+
+
+____________________
+BITWISE OPERATORS '&' is and, '|' is or
+
+print(10&12) # AND
+
+''' BINARY CONVERT
+      8   4  2  1      
+10 = (1)  0  1  0
+12 = (1)  1  0  0
+
+* the answer is '8' because the 1 are same align with 10 and 12.
+'''
+
+print(10|12) # OR
+
+''' BINARY CONVERT
+      8   4  2  1      
+10 =  1  0  1  (0) become 1  0  1 (1) become 1  1  1  1
+12 =  1  1  0  (0) become 1  1  0 (1) become 1  1  1  1
+
+* the zero both allign will become 1 
+* it turning all in '1'
+* the answer is '14'
+'''
+
+print(10 << 2) # LEFT SHIFT
+
+'''
+10 = 1 0 1 0 THEN ADD 2 zero of end because of (10 << '2')
+finally it become 1 0 1 0 (0 0)
+
+32  16  8   4   2   1 
+1   0   1   0   0   0  = 32 and 8 are in '1' so 32+8 = 40
+'''
+
+print(10 >> 2) # RIGHT SHIFT
+
+'''
+      8   4   2    1      
+10 =  1   0  (1)  (0)  = out 2:  *the binary of '10' which is 1 0 1 0 the (1) (0) 1 0 will disregard because it's left shift
+'''
+
+print(10^2) # XOR * sets each bit to 1 if only one of the bits is 1.n
+
+
+*EXAMPLE 1*
+#. without walrus
+
+x = 5
+not_walrus = x < 7
+print(not_walrus)
+
+#. with walrus
+
+x = 5
+print(walrus := x < 7)
+
+*EXAMPLE 2*
+#. without walrus
+
+nums = []
+num = input("Type a Number: ")
+while num.isdigit():
+	nums.append(int(num))
+	num = input("Type a Number: ")
+
+#. with walrus
+
+nums = []
+while (num := input("Type a number: ")).isdigit():
+	nums.append(num)
+
+*EXAMPLE 3*
+#. without walrus
+
+var = 5
+if var == 5:
+	ans = input("Type your answer: ")
+	if ans != "":
+		print('Nice')
+
+#. with walrus
+
+var = 5
+if var == 5 and (ans := input("Type your answer: ") != "")
+	print(ans)
+
+______________________________--
+**BINARY AND (&)**
+
+a = 50		# 110010
+b = 25		# 011001
+c = a & b	# 010000
+print(c) # 16
+
+"""
+EXPLANATION:
+a = 50 convert into binary - 110010 
+b = 25 convert into binary - 011001
+c = a & b added the a and b -  010000 is equivalent to 16
+
+1 + 1 = 1
+0 + 0 = 0
+1+ 0 = 0
+0+ 1 = 0
+"""
+
+**BINARY RIGHT SHIFT (>>)**
+
+x = 240		# 11110000
+y = x >> 2 # 00111100
+print(y)
+
+"""
+EXPLANATION:
+
+x = 240 convert into binary - 11110000
+y = x >> 2 the ">>" means right shift and it means the 2 corresponds to add 2 zeros on FIRST digits '11110000' become '00111100' and the last 2 zero's will removed
+print(y)  '00111100' is equivalent to '60'
+"""
+*OTHER EXAMPLE*
+
+x = 180		# 10110100
+y = x >> 3 # 00010110
+print(y) # 22
+
+x = 347 # 101011011
+y = x >> 5 # 000001010
+print(y) # 10
+
+**BINARY LEFT SHIFT (<<)**
+
+x = 56 # 111000
+y = x << 2 # 111000'00'
+print(y) # 480
+
+"""
+EXPLANATION:
+
+x = 56 convert into binary - 111000
+y = x << 2 the "<<" means left shift and it means the 2 corresponds to add 2 zeros on LAST digits '111000' become '11100000'
+print(y)  '11100000' is equivalent to '224'
+"""
+
+Binary Right Shift - added zero on a first digit and the last digit will removed with the number of added on a first digit
+BInary Left
