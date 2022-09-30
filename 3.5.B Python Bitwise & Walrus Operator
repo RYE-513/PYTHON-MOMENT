@@ -1,4 +1,6 @@
-BITWISE OPERATORS
+////////////////////////////////////////////////////////////////////////////////////////////////////
+BITWISE OPERATOR
+////////////////////////////////////////////////////////////////////////////////////////////////////
 ____________________
 BITWISE AND '&'
 ____________________
@@ -33,23 +35,33 @@ ____________________
 
 print(10 << 2)
 
-'''
+
 10 = 1 0 1 0 THEN ADD 2 zero of end because of (10 << '2')
 finally it become 1 0 1 0 (0 0)
 
 32  16  8   4   2   1 
 1   0   1   0   0   0  = 32 and 8 are in '1' so 32+8 = 40
-'''
 
-print(10 >> 2) # RIGHT SHIFT
+____________________
+BITWISE RIGHT SHIFT '>>'
+____________________
 
-'''
+print(10 >> 2)
+
+
       8   4   2    1      
-10 =  1   0  (1)  (0)  = out 2:  *the binary of '10' which is 1 0 1 0 the (1) (0) 1 0 will disregard because it's left shift
-'''
+10 =  1   0  (1)  (0)  = the binary of '10' which is 1 0 1 0 the (1) (0) 1 0 will disregard because it's left shift then 10.
 
-print(10^2) # XOR * sets each bit to 1 if only one of the bits is 1.n
+____________________
+BITWISE EXCLUSIVE OR - XOR '^'
+____________________
 
+print(10^2) # 8,  each bit to 1 if only one of the bits is 1.n
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+WALRUS OPERATOR
+////////////////////////////////////////////////////////////////////////////////////////////////////
 
 *EXAMPLE 1*
 #. without walrus
