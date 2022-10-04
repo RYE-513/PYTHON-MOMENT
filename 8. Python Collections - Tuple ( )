@@ -1,10 +1,10 @@
-SET ( )
+TUPLE ( )
 
 - items also known as elements.
 - round brackets "( )"
 - ordered container
 - can contained mixed data types.
-- can't duplicate, can't add, can't change
+- can't duplicate, can't add, can't change, can't remove item from tuple
 
 ////////////////////
 ACCESSING AN ITEMS
