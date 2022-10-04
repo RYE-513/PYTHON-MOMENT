@@ -106,7 +106,7 @@ pets = tuple(('dog', 'cat', 'fish'))
 print(pets)
 
 //////////////////////////////
-EXTENDING A TUPLES - To combine tuples, use the addition operator (+).
+COMBINING / EXTENDING A TUPLES - To combine tuples, use the addition operator (+).
 //////////////////////////////
 
 pets1 = ('dog', 'cat', 'rabbit')
