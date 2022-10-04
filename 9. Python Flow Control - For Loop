@@ -1,0 +1,141 @@
+////////////////////////////////////////
+EXAMINE THE DIFFERENCES OF THIS 4 SYNTAX
+////////////////////////////////////////
+
+name = ["John", "Rye", "BSCS"]
+for i in name :
+	print(i)
+
+print('')
+
+name = ["John", "Rye", "BSCS"]
+for i in name :
+	print(name)
+
+print('')
+	
+name = ["John", "Rye", "BSCS"]
+for name in i :
+	print(name)
+
+print('')
+	
+name = ["John", "Rye", "BSCS"]
+for name in i :
+	print(i)
+  
+///////////////////////
+LOOPING THROUGH A LIST
+///////////////////////
+
+pets = ['dogs', 'cats', 'fish']
+
+for rye in pets:
+	print(rye)
+
+/////////////////////////
+LOOPING THROUGH A STRING
+/////////////////////////
+
+txt = "RYE BSCS"
+
+for rye in txt:
+	print(rye)
+
+for x in range(5) :
+    print('hey') # shows 'hey' 5 times
+    
+for x in range(5) :
+    print(x) # shows number range
+____________________________________________________________________
+THE range() FUNCTION - creates a sequence of numbers starting from 0
+____________________________________________________________________
+
+for x in range(5) :
+     print(x)
+
+for x in range(3):
+     print("RYE BSCS")
+
+/////////////////
+NESTED FOR LOOPS
+/////////////////
+
+animal = ['tiger','cat','dog']
+sound = ['roars','meows','barks']
+
+for x in animal:
+      for y in sound:
+           print("The " + x + " " + y )
+
+/////////////////////
+ELSE WITH FOR LOOP
+/////////////////////
+
+for x in range(3):
+      print("RYE BSCS")
+else:
+      print ("The Loop has ended!")
+      
+________________________________________
+For Loop Single Multiplication Syntax
+________________________________________
+
+for x in range(1,8) :
+     answer = 3*i ;
+     print (f"3X{i}={answer}" , end = " ")
+     
+_______________________________________
+For Loop Nested Multiplication Syntax
+_______________________________________
+
+for j in range(1,10) :
+   for i in range(1,6) :
+        answer = j*i;
+        print (f"{j}X{i}={answer}" , end = " ")
+    print('\n') #new line
+
+/////////
+SUMMARY
+/////////
+
+___________
+SUMMARY 1
+___________
+
+fruits = ['apple', 'banana', 'strawberry']
+
+for i in fruits :
+   count = len(i)
+print(f"the fruit is {i}") # "the fruits is strawberry"
+
+___________
+SUMMARY 2
+___________
+
+fruits = ['apple', 'banana', 'strawberry']
+
+for i in fruits :
+print(f"the fruits are {i}") # the fruits are apple... banana... strawberry...
+
+___________
+SUMMARY 3
+___________
+
+fruits = ['apple', 'banana', 'strawberry']
+
+for i in fruits :
+   count = len(i)
+   print(f"{i} has a {count} letters")
+   
+___________
+SUMMARY 4
+___________
+
+fruits = ['apple', 'banana', 'strawberry']
+
+for x in fruits :
+  print(x)
+  if x == 'banana' :
+     print("banana has been found")
+     break # use to hide the last item in array "strawberry"
