@@ -161,7 +161,7 @@ print(max(my_list)) # '1024' - it shows highest value.
 print(sum(my_list)) # '2481' - it adds all the integer value.
 
 //////////////////////////////
-MATRIX
+MATRIX - double list
 //////////////////////////////
 
 matrix = [[1,2,3], # 0
