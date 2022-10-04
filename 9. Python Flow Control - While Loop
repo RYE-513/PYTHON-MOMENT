@@ -1,0 +1,133 @@
+The while loop executes a group of statements as long the given expressions is TRUE
+
+i = 0
+
+while i < 5:
+	print(i)
+	i += 1
+
+i = 1
+
+while i <= 5:
+	print('RYE BSCS')
+	i += 1
+
+**if you direct " while 0 < 5: " it will raised an error**
+
+while 0 < 5:
+	print(i)
+	i += 1
+
+**if you don't put iteration " i += 1 " in while loop it will run endlessly**
+
+i = 0
+
+while i < 5:
+	print(i)
+
+**ELSE WITH FOR LOOP**
+
+i = 1
+
+while i <= 5:
+	print('RYE BSCS')
+	i += 1
+else:
+	print('Loop has ended')
+
+
+
+
+
+
+
+___
+
+number = int(input())
+
+while number > 0 :
+     print(number)
+     number = number - 1
+___
+password = input('ENTER THE PASSWORD')
+
+while password != 'RYEBRIZ513' :
+   print("PASSWORD INCORRECT, TRY AGAIN")
+   password = input("ENTER THE CORRECT PASSWORD")
+
+print("WELCOME...")
+___
+#. COUNT DOWN
+
+countNumber = 10
+lastNumber = 0
+
+while countNumber >= lastNumber:
+   print(countNumber)
+   countNumber = countNumber -1
+
+#. COUNT UP
+
+countNumber = 0
+lastNumber = 10
+
+while countNumber <= lastNumber :
+   print(countNumber)
+   countNumber = countNumber +1 # or countNumber+=1
+
+
+numX = int(input())
+while numX = 0 :
+    print(numX)
+    numX = numX -1
+
+count = 1
+
+while count <= numX :
+    print(count)
+    count = count+1
+___
+CODELIBER
+___
+
+• While Loop executes a group of statements as long as the given expression is True
+
+"""
+Syntax:
+
+while expression:
+	statement(s)
+"""
+
+i = 0
+
+while i < 0:
+print(i)
+i += 1
+
+
+i = 0
+
+while i < 5:
+	print("RYE BSCS")
+	i =+ 1
+
+if you don't increment the counter, the while loop will not stop until forever
+
+"""
+
+"""
+#. USING ELSE WITH WHILE LOOP
+
+i = 1
+
+while i < 5:
+	print('RYE BSCS')
+	i += 1
+else:
+	print('the loop was end')
+
+
+
+
+"""
