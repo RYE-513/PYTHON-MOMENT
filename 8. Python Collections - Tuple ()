@@ -1,4 +1,4 @@
-SET ()
+SET ( )
 
 - items also known as elements.
 - round brackets "( )"
@@ -7,7 +7,7 @@ SET ()
 - can't duplicate, can't add, can't change
 
 ////////////////////
-ACCESSING ITEMS
+ACCESSING AN ITEMS
 ////////////////////
 
 my_tuple = ('Rye', 'Ryan', 'Amogus', 'BSCS')
@@ -27,7 +27,6 @@ print(pets) # ('dog', 'cat', 'fish')
 
 x = ("dog", 21, True)
 print(x) # ('dog', 21, True) - can contained mixed data types.
-
 
 ///////////////
 INDEXING - used to access the items of a list
