@@ -1,0 +1,178 @@
+LIST []
+
+- square brackets "[ ]"
+- ordered container
+- can duplicate
+
+x = ["dog", 21, True]
+print(x) # ['dog', 21, True] - can contained mixed data types.
+
+faveSong = ["In", "Bloom", "Neck Deep"]
+print(faveSong) # ['In', 'Bloom', 'Neck Deep']
+
+////////////////////
+INDEXING - used to access the items of a list
+////////////////////
+
+- '0' is the first number
+- '1' refers to the second number and so on.
+
+pets = ['dog', 'cat', 'fish']
+print(pets[0]) # dog
+print(pets[1]) # cat
+print(pets[2]) # fish
+
+////////////////////
+NEGATIVE INDEXING - where (-1) refers to the last item, (-2) second to the last item, and so on.
+////////////////////
+
+pets = ['dog', 'cat', 'fish']
+print(pets[-1]) # fish
+print(pets[-2]) # cat
+print(pets[-3]) # dog
+
+////////////////////
+RANGE OF INDEXES - [start:end] in end slicing the specific number will disregard.
+////////////////////
+
+By using a colon ":" we can access a range of items at once
+
+pets = ['dog', 'cat', 'fish', 'bird', 'hamster']
+x = pets[1:3]
+print(x) # ['cat', 'fish'] - the [1:'3'] '3' index will disregard and it refers to 'second; index which is the 'fish'.
+
+# if you don't specify the first index '[:2]' the range constantly start from index 0.
+
+pets = ['dog', 'cat', 'fish', 'bird', 'hamster']
+x = pets[:2]
+print(x) #. ['dog', 'cat']
+
+# if you don't specify the last index '[2:]', the range ends with the last item of the list
+# in this case, the range includes the last item
+
+pets = ['dog', 'cat', 'fish', 'bird', 'hamster']
+x = pets[2:] # disregard the ['dog', 'cat'] because they are '0' and '1' index
+print(x) #. ['fish', 'bird', 'hamster']
+
+//////////////////////////////
+ADDING ITEMS TO A LIST - append()
+//////////////////////////////
+
+- the 'append()' method adds an item to the specific list.
+- in this example, we will insert "rabbit" to index 0 and "hamster" to index 2
+
+pets = ['dog', 'cat', 'fish']
+pets.insert(0, "rabbit") # the 'rabbit' will be the first index 0 and the 'dog' will be the index 1
+pets.insert(2, "hamster") # the 'hamster' will be the index 2 and the 'cat' will be the index 3
+
+print(pets) # ['rabbit', 'dog', 'hamster', 'cat', 'fish']
+
+//////////////////////////////
+DELETING ITEMS FROM A LIST - pop() and item()
+//////////////////////////////
+
+_______________________________________________________
+# .pop() - it specifically removes the 'index position'
+_______________________________________________________
+
+languages = ['Python', 'Java', 'C++', 'French', 'C']
+
+# remove and return the 4th item '3rd index'
+return_value = languages.pop(3) # the third index 'french' will be removed
+
+print('Return Value:', return_value)
+print('Updated List:', languages)
+
+# if the .pop() is not specified the index .pop(3) it considered as .pop(-1) or the last item will removed.
+
+________________________________________________________________
+# .item() - it specifically removes the 'actual item from list'
+________________________________________________________________
+
+prime_numbers = [2, 3, 5, 7, 9, 11]
+
+prime_numbers.remove(9) # remove '9' from the list
+print('Updated List: ', prime_numbers) # [2, 3, 5, 7, 11]
+
+//////////////////////////////
+GETTING A LENGTH OF A LIST - .len() method
+//////////////////////////////
+
+pets = ['dog', 'cat', 'fish']
+print(len(pets)) # 3
+
+//////////////////////////////
+CHANGING AN ITEM'S VALUE - To change an item's value, access the index first and use the assignment operator
+//////////////////////////////
+
+pets = ['dog', 'cat', 'fish']
+pets[2] = 'rabbit' # you can not directed as print(pets[2])
+print(pets) # ['dog', 'cat', 'rabbit']
+
+//////////////////////////////
+CHECKING IF AN ITEMS EXISTS - using 'in' operator
+//////////////////////////////
+
+- it returns 'True' if the item is found, otherwise returns False
+
+pets = ['dog', 'cat', 'fish']
+print("dog" in pets) # TRUE
+print("python" in pets) # FALSE
+
+//////////////////////////////
+EXTENDING A LIST - .extend() method adds all items from a list to another list
+//////////////////////////////
+
+nums1 = [1,2,3]
+nums2 = [4,5,6]
+nums1.extend(nums2)
+print(nums1) # [1, 2, 3, 4, 5, 6]
+
+print(nums2.count("1")) # it determines if there's a specific item list and how many items in it.
+
+//////////////////////////////
+LOOPING THROUGH A LIST - Looping through a list basically means accessing all its items one-by-one
+//////////////////////////////
+
+- The for loop is used to loop through a list
+
+pets = ['dog', 'cat', 'fish']
+for rye in pets:
+	print(rye) # dog, cat, fish
+
+**ANOTHER WAY TO CREATE LIST**
+
+The way we created our lists above is called literal.
+another way to create a list is to use the list() constructor
+
+pets = list(('dog', 'cat', 'fish'))
+print(pets)
+
+**SORTING**
+
+my_list = [1024, 56, 888, 513]
+
+my_list.sort() # arrange those list arg SMALLEST TO BIGGEST
+print(my_list)
+my_list.reverse() # reverse sort BIGGEST to SMALLEST
+print(my_list)
+
+print(min(my_list)) # it shows least value
+print(max(my_list)) # it shows highest value
+
+print(sum(my_list)) # it adds all the int value
+
+**NOTE: don't direct it as print(my_list.sort) because it turns an error**
+
+**MATRIX**
+
+matrix = [[1,2,3],  # 0
+               [4,5,6],   # 1
+               [7,8,9]]   # 2
+             # 0 1 2
+
+print(matrix[2][0])
+print(matrix[1][2])
+print(matrix [0][0]
+
+**NOTE: The term ITEMS ca also be reffered to as ELEMENTS**
