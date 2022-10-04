@@ -1,0 +1,117 @@
+SET ()
+
+- items also known as elements.
+- round brackets "( )"
+- ordered container
+- can contained mixed data types.
+- can't duplicate, can't add, can't change
+
+////////////////////
+ACCESSING ITEMS
+////////////////////
+
+my_tuple = ('Rye', 'Ryan', 'Amogus', 'BSCS')
+f1, f2, f3, f4 = my_tuple
+
+print(f2) # Amogus
+print(my_tuple.index('Ryan')) # 1, 'Ryan' is in the index 1
+
+# .append() is not working in tuple because tuple is not capable to add an items.
+
+////////////////////////////////////////////////////////////////
+CREATING A TUPLE - tuple is created by using round brackets ()
+///////////////////////////////////////////////////////////////
+ 
+pets = ('dog', 'cat', 'fish')
+print(pets) # ('dog', 'cat', 'fish')
+
+x = ("dog", 21, True)
+print(x) # ('dog', 21, True) - can contained mixed data types.
+
+
+///////////////
+INDEXING - used to access the items of a list
+///////////////
+
+- when 0 index is the first item and 1 refers to the second item and so on.
+
+pets = ('dog', 'cat', 'fish')
+print(pets[0]) # dog
+print(pets[1]) # cat
+print(pets[2]) # fish
+
+////////////////////
+NEGATIVE INDEXING - where (-1) refers to the last item, (-2) second to the last item, and so on.
+////////////////////
+
+pets = ['dog', 'cat', 'fish']
+print(pets[-1]) # fish
+print(pets[-2]) # cat
+print(pets[-3]) # dog
+
+////////////////////
+RANGE OF INDEXES - [start:end] in end slicing the specific number will disregard.
+////////////////////
+
+By using a colon ":" we can access a range of items at once
+
+pets = ('dog', 'cat', 'fish', 'bird', 'hamster')
+x = pets[1:3]
+print(x) # ['cat', 'fish'] - the [1:'3'] '3' index will disregard and it refers to 'second; index which is the 'fish'.
+
+# if you don't specify the first index '[:2]' the range constantly start from index 0.
+
+pets = ('dog', 'cat', 'fish', 'bird', 'hamster')
+x = pets[:2]
+print(x) #. ['dog', 'cat']
+
+# if you don't specify the last index '[2:]', the range ends with the last item of the list
+# in this case, the range includes the last item
+
+pets = ('dog', 'cat', 'fish', 'bird', 'hamster')
+x = pets[2:] # disregard the ['dog', 'cat'] because they are '0' and '1' index
+print(x) # ['fish', 'bird', 'hamster']
+
+//////////////////////////////
+GETTING A LENGTH OF A LIST - .len() method
+//////////////////////////////
+
+pets = ('dog', 'cat', 'fish')
+print(len(pets)) # 3
+
+//////////////////////////////
+LOOPING THROUGH A LIST - Looping through a list basically means accessing all its items one-by-one
+//////////////////////////////
+
+- The for loop is used to loop through a list
+
+pets = ('dog', 'cat', 'fish')
+for rye in pets:
+	print(rye) # dog, cat, fish
+
+//////////////////////////////
+CHECKING IF AN ITEMS EXISTS - using 'in' operator
+//////////////////////////////
+
+- it returns 'True' if the item is found, otherwise returns False
+
+pets = ('dog', 'cat', 'fish')
+print("dog" in pets) # TRUE
+print("python" in pets) # FALSE
+
+//////////////////////////////
+CONVERTING INTO LIST - .tuple(), The way we created our lists above is called 'literal'.
+//////////////////////////////
+
+pets = tuple(('dog', 'cat', 'fish'))
+print(pets)
+
+//////////////////////////////
+EXTENDING A TUPLES - To combine tuples, use the addition operator (+).
+//////////////////////////////
+
+pets1 = ('dog', 'cat', 'rabbit')
+pets2 = ('fish', 'bird', 'hamster')
+all_pets = pets1 + pets2
+
+print(all_pets)
