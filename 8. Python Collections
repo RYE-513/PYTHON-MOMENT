@@ -1,7 +1,5 @@
 CONTAINERS
-- Containers are objects that contain objects
-- Containers are also called collections
-are objects that contain objects
+- Containers/Containers are contain objects.
 
 LIST [  ]
 - organize
@@ -17,9 +15,14 @@ LIST [  ]
 - 0 index is the first number
 - it's changeable
 
+TUPLE (  )
+- not changeable / vice versa of list
+- can't add more data
+- less memory than List
+
 SET {  }
 - unique
-- mixed set and not organize
+- mixed set (string, int, char, double) and not organize
 - can't add more data
 - can't duplicate
 
@@ -28,13 +31,9 @@ DICTIONARY { : }
 - unorder
 - KEY and VALUE
 
-TUPLE (  )
-- not changeable / vice versa of list
-- can't add more data
-- less memory than List
 
 LIST • [1,2,3]
+TUPLE • (1,2,3)
 SET • {1,2,3}
 DICTIONARY • {'a':1,'b':2,'c':3}
-TUPLE • (1,2,3)
 
