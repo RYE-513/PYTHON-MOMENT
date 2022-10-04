@@ -1,0 +1,131 @@
+an **UNORDERED** and **MUTABLE** collection of items.
+**KEY/VALUE PAIR**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+print(person)
+
+#. key: first_name
+#. value: John
+
+**ACCESING ITEMS**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+x = person["first_name"] # or print("First Name:", person["first_name"])
+y = person["last_name"]
+z = person["age"]
+
+print("First Name", x) 
+print("Last Name:", y)
+print("Age:", z)
+
+print(person.keys())
+print(person.values())
+print(person.items())
+
+print(list(person.items())
+
+**get() METHOD**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+print(person.get("first_name"))
+
+print(person("hobby")) #. shows an error
+print(person.get("hobby")) #. shows "none"
+
+**ADDING ITEMS**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+person["course"] = "BS Computer Science"
+print(person)
+
+**CHANGING AN ITEM'S VALUE**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+person["first_name"] = "Ryan"
+person["last_name"] = "Rye"
+print(person)
+
+**REMOVING AN ITEM**
+**pop() method removes an item with specified key name**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+person.pop("age") # raise an error if you not specfied the key
+print(person)
+
+**del() method**
+
+del person["age"]
+print(person)
+
+**GETTING THE LENGTH OF A DICTIONARY**
+**len() method**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+print(len(person)) # 3
+
+**CHECKING KEY EXISTS**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+if "age" in person:
+	print('the "age" key exists')
+
+**LOOPING THROUGH A DICTIONARY**
+
+person = {
+                    "first_name": "John", 
+                    "last_name": "Doe",
+                     "age": 30 }
+
+for key in person:
+	print(person[key])
+
+**NESTED DICTIONARY**
+
+employees = {
+	"manager": {
+		"name": "John Rye",
+		"age": 29
+},
+"programmer": {
+		"name": "Rye Ryan",
+		"age": 31
+}
+}
+
+print(employees)
+
+**ACCESSING NESTED DICTIONARY**
+
+print(employees["manager"]["name"])
+print(employees["programmer"]["name"])
