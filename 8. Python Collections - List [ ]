@@ -69,7 +69,7 @@ pets.insert(2, "hamster") # the 'hamster' will be the index 2 and the 'cat' will
 print(pets) # ['rabbit', 'dog', 'hamster', 'cat', 'fish']
 
 //////////////////////////////
-DELETING ITEMS FROM A LIST - pop() and item()
+REMOVING ITEMS FROM A LIST - pop() and item()
 //////////////////////////////
 _______________________________________________________
 # .pop() - it specifically removes the 'index position'
