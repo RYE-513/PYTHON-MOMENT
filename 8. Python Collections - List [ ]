@@ -120,7 +120,7 @@ print("dog" in pets) # TRUE
 print("python" in pets) # FALSE
 
 //////////////////////////////
-EXTENDING A LIST - .extend() method adds all items from a list to another list
+COMBINING / EXTENDING A LIST - .extend() method adds all items from a list to another list
 //////////////////////////////
 
 nums1 = [1,2,3]
@@ -141,7 +141,7 @@ for rye in pets:
 	print(rye) # dog, cat, fish
 
 //////////////////////////////
-CONVERTING INTO LIST - .list(), The way we created our lists above is called 'literal'.
+CREATING INTO LIST - .list(), The way we created our lists above is called 'literal'.
 //////////////////////////////
 
 pets = list(('dog', 'cat', 'fish'))
