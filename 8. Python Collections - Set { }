@@ -1,0 +1,152 @@
+SET { }
+
+- items also known as elements.
+- curly brackets "{ }"
+- not ordered container
+- not changeable
+- unique collection
+- when you print again the items in set will be mixed up/disorganize.
+
+pets = {'dog', 'cat', 'fish'}
+print(pets)
+
+////////////////////
+ACCESING ITEMS - you can NOT access the items of a set using indexes
+////////////////////
+
+////////////////////
+LOOPING THROUGH A SET
+////////////////////
+
+pets = {'dog', 'cat', 'fish'}
+
+for pet in pets:
+	print(pet) # fish, cat, dog
+
+//////////////////////////////
+ADDING ITEMS TO A SET - .add() or .update()
+//////////////////////////////
+
+pets = {'dog', 'cat', 'fish'}
+pets.add("rabbit")
+
+print(pets) # {'fish', 'dog', 'cat', 'rabbit'}
+
+//////////////////////////////
+REMOVING ITEMS FROM A SET - .remove()
+//////////////////////////////
+
+pets = {'dog', 'cat', 'fish','rabbit'}
+pets.remove("rabbit")
+
+print(pets) # {'fish', 'dog', 'cat'} # the 'rabbit' was removed and the {'fish', 'dog', 'cat'} will print differently
+
+•  remove() - turns an error when you 'not' put an index number
+•  discard() - turns an error when you 'not' put an index number 
+•  pop() - random remove in set , turns an error when you put an index number
+
+//////////////////////////////
+GETTING A LENGTH OF A SET - .len() method
+//////////////////////////////
+
+pets = {'dog', 'cat', 'fish'}
+print(len(pets)) #3
+
+//////////////////////////////
+CHECKING IF AN ITEMS EXISTS - using 'in' operator
+//////////////////////////////
+
+- it returns 'True' if the item is found, otherwise returns False
+
+pets = {'dog', 'cat', 'fish'}
+print("dog" in pets) # TRUE
+print("python" in pets) # FALSE
+
+//////////////////////////////
+COMBINING / EXTENDING A SETS - .update()
+//////////////////////////////
+
+x = {1,2,3,4}
+y = {3,4,5,6}
+
+print("x - y:", x - y) # x - y: {1, 2}
+print("y - x:", y - x) # y - x: {5, 6}
+
+
+//////////////////////////////
+SUMMARY OF SETS
+//////////////////////////////
+
+__________
+SAMPLE 1
+__________
+
+my_set = {'item1', 'item2', 'item3'}
+
+my_set.add(1)
+my_set.add(2)
+my_set.add(2) # you can add once and can't duplicate same value
+print(my_set) # {1, 2, 'item1', 'item2', 'item3'}
+
+my_set.remove(1) # remove the specific item not index place.
+print(my_set) # {2, 'item1', 'item2', 'item3'}
+
+__________
+SAMPLE 2
+__________
+
+my_list = [1, 2, 3, 3, 3, 4, 4, 5, 6, 1]
+my_set = set(my_list)
+
+print(my_set) # {1,2,3,4,5,6} - organized and removes duplicate items.
+
+__________
+SAMPLE 3
+__________
+
+set1 = {'AMOGUS1', 'AMOGUS2', 'AMOGUS3', 'AMOGUS4'}
+set2 = {'AMOGUS5', 'AMOGUS6', 'AMOGUS7', 'AMOGUS8'}
+
+set3 = set1.union(set2)
+print(set3) # they will extend but it shows random and unorganized
+
+set3 = set1.intersection(set2)
+print(set3) # shows set()
+
+set3 = set1.difference(set2)
+print(set3) # shows set 1 items
+
+set3 = set2.symmetric_difference(set1)
+print(set3) # they will extend but it shows random and unorganized
+
+set3 = set2.issubset(set1)
+print(set3) # FALSE because they are different values.
+
+set3 = set2.issuperset(set1)
+print(set3) # FALSE because they are different values.
+
+set3 = set2.isdisjoint(set1) 
+print(set3) # 
+
+"""
+.difference() | A notMid notB
+returns a set that contains the difference between two sets.
+
+.union() | A MID B
+returns a set that contains all items from the original set, and all items from the specified set(s). 
+
+.intersection() | MID
+returns a set that contains the similarity between two or more sets.
+
+.symmetric_difference() | A B
+returns a set that contains all items from both set, but not the items that are present in both sets. Meaning: The returned set contains a mix of items that are not present in both sets.
+
+.issubset() | A is bigger than B
+ returns True if all items in the set exists in the specified set, otherwise it retuns False.
+
+.issuperset() | B is bigger than A
+returns True if all items in the specified set exists in the original set, otherwise it retuns False.
+
+.isdisjoint() | A and B are different values
+returns True if none of the items are present in both sets, otherwise it returns False.
+"""
