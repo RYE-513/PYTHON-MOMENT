@@ -1,0 +1,117 @@
+____________
+IF STATEMENT
+____________
+x = 10
+y = 5
+
+if x > y:
+	str = 'Rye BSCS!'
+	print(str) # Rye BSCS!
+  
+________________________
+IF STATEMENT + ELSE
+________________________
+
+age = 25
+
+if age > 21:
+	print("ALL GOODS") # it prints here.
+else:
+	print("NOT GOODS")
+
+_______________________________________________________________
+IF STATEMENT + ELSEIF -if and elif are depends who is the true
+_______________________________________________________________
+
+x = 5
+
+if x > 10: # 5 > 10 is false
+	print('the if shows')
+elif x < 10: # 5 < 10 is true
+	print("the elif shows") # it prints here 
+
+____________________________
+IF STATEMENT + ELSEIF + ELSE
+____________________________
+
+x = 10
+
+if x > 10: # 5 > 10 is false
+	print('the if shows')
+elif x < 10: # 5 < 10 is true
+	print("the elif shows")
+else: # not match in if or elif
+	print("RYE") # it prints here 
+
+////////////////////////
+USING LOGICAL OPERATORS
+////////////////////////
+
+_____________________
+'and' is majority false
+_____________________
+
+x = 10
+y = 5
+
+if (x == 10) and (y == 5):
+	txt = 'RYE BSCS'
+	print(txt)
+
+_____________________
+'or' is majority true
+_____________________
+
+x = 10
+y = 5
+
+if (x == 10) or (y == 5):
+	txt = 'RYE BSCS'
+	print(txt)
+
+/////////////////////
+NESTED IF STATEMENTS
+/////////////////////
+
+gun = "m16"
+
+if gun == 'ak47':
+	print('AK47 is your primary gun')
+	if gun == 'ak47':
+	    print('RYAN AK47')
+elif gun == "m16":
+    print('M16 is your priamry gun') # it prints here 
+    if gun == 'M16':
+	    print('RYAN M16')
+else:
+    print('gun not found')
+	 
+///////////////////////////////////////////////////////////////////////////////////
+CONDITION STATEMENTS SHORTHAND | Syntax: <on_true> if <expression> else <on_false>
+///////////////////////////////////////////////////////////////////////////////////
+_______________
+NORMAL ELSE..IF
+_______________
+
+x = 10
+
+If x == 10 :
+   print("x is 10")
+else :
+   print("x is not 10")
+
+_____________________
+SHORTHAND | METHOD 1
+_____________________
+
+x = 10
+
+print("x is 10") if x == 10 else print("x is not 10")
+
+_____________________
+SHORTHAND | METHOD 2
+_____________________
+
+x = 10
+str = "x is 10" if x == 10 else "x is not 10"
+print(str)
