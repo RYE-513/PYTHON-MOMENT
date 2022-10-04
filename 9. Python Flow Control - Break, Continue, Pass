@@ -1,0 +1,135 @@
+//////////////////////////////////////////////////////////////////
+The 'break' Statement -  stops the execution of the current loop.
+//////////////////////////////////////////////////////////////////
+
+__________________
+BREAK STATEMENT 1
+__________________
+
+pets = ["dogs", "cats", "fish"]
+
+for pet in pets:
+	print(pet)
+	break # putting a break the 'dogs' will only shown
+  
+__________________
+BREAK STATEMENT 2
+__________________
+
+pets = ["dogs", "cats", "fish"]
+
+for pet in pets:
+	print(pet)
+	if pet == "cats":
+	#break # if you disable this 'break' under if statment it raised an 'error'.
+  
+__________________
+BREAK STATEMENT 3
+__________________
+
+pets = ["dogs", "cats", "fish"]
+
+for rye in pets:
+    print(rye)
+    if rye == "cats": # it shows the cats to dogs or any item from left
+      break
+
+# notice that cats was still printed, it is because the break statement came after the print function.
+
+__________________
+BREAK STATEMENT 4
+__________________
+
+pets = ["dogs", "cats", "fish"]
+
+for rye in pets:
+    if rye == "cats":
+      break
+    print(rye) # it shows the first element
+
+____________________________________
+BREAK STATEMENT ON A WHILE LOOP
+____________________________________
+
+i = 1
+
+while 1 <= 5:
+	if i == 3:
+		break # if you not input the break under the if statement it shows 'nothing'
+	print(i)
+	i += 1
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+The 'continue' Statement - stops the current iteration of the current loop and continues the execution of the loop through a string
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+__________________
+CONTINUE STATEMENT 1
+__________________
+
+pets = ["dogs", "cats", "fish"]
+
+for pet in pets:
+	if pet == "cats":
+		continue
+	print(pet) # it shows the the 'dogs' and 'fish' it disregard the 'cats'
+
+__________________
+CONTINUE STATEMENT 2
+__________________
+
+txt = "hello"
+
+for x in txt:
+	if x == "l":
+		continue
+	print(x) # shows " h e o " disregard the '  l '
+
+____________________________
+CONTINUE WITH WHILE LOOP
+____________________________
+
+i = 0
+
+while i < 5:
+	i += 1
+	if i == 2:
+		continue # if you not input the continue under the if statement it shows '2'
+	print(i)
+
+////////////////////////////////////////////////////////////////////////////////////////////
+the 'pass' statement is used as a placeholder when a statement is syntactically required.
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+__________________
+PASS STATEMENT 1
+__________________
+
+def add():
+	pass
+
+def subtract():
+	pass
+  
+print("RYE BSCS")
+
+__________________
+PASS STATEMENT 2
+__________________
+# it can be used on flow control
+
+if  5 == 5:
+	pass
+else :
+	pass
+
+__________________
+PASS STATEMENT 3
+__________________
+
+pets = ['cat','dog','rabbit']
+for pet in pets:
+	pass
+
+class StuDent:
+	pass
