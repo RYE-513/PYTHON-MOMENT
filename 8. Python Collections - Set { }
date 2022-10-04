@@ -140,25 +140,29 @@ print(this_set) # 'False' because they are different values.
 this_set = set2.isdisjoint(set1) 
 print(this_set) # True,  returns 'True' if none of the items are present in both sets, otherwise it returns 'False'.
 
-"""
-.difference() | A notMid notB
+/////////////////////////////////////////
+             SUMMARY
+/////////////////////////////////////////
+
+.difference() | (A notMid) (notB)
 returns a set that contains the difference between two sets.
 
-.union() | A MID B
+.union() | (A)(MID)(B)
 returns a set that contains all items from the original set, and all items from the specified set(s). 
 
-.intersection() | MID
+.intersection() | (MID)
 returns a set that contains the similarity between two or more sets.
 
-.symmetric_difference() | A B
+.symmetric_difference() | (A)(B)
 returns a set that contains all items from both set, but not the items that are present in both sets. Meaning: The returned set contains a mix of items that are not present in both sets.
 
-.issubset() | A is bigger than B
+.issubset() | (A) is bigger than (b)
  returns True if all items in the set exists in the specified set, otherwise it retuns False.
 
-.issuperset() | B is bigger than A
+.issuperset() | (B) is bigger than (a)
 returns True if all items in the specified set exists in the original set, otherwise it retuns False.
 
-.isdisjoint() | A and B are different values
+.isdisjoint() | (A) and (B) are different values
 returns True if none of the items are present in both sets, otherwise it returns False.
-"""
+
+
