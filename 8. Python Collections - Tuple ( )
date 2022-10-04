@@ -99,7 +99,7 @@ print("dog" in pets) # TRUE
 print("python" in pets) # FALSE
 
 //////////////////////////////
-CONVERTING INTO LIST - .tuple(), The way we created our lists above is called 'literal'.
+CREATING INTO LIST - .tuple(), The way we created our lists above is called 'literal'.
 //////////////////////////////
 
 pets = tuple(('dog', 'cat', 'fish'))
