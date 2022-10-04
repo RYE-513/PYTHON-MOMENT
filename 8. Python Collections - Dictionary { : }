@@ -1,131 +1,131 @@
-an **UNORDERED** and **MUTABLE** collection of items.
-**KEY/VALUE PAIR**
+DICTIONARY { : }
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
-print(person)
+- items also known as elements.
+- curly brackets and colon inside "{ : }"
+- Key & Value Pairs
+- not ordered container
+- not changeable
 
-#. key: first_name
-#. value: John
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
+	    
+print(person) # {'first_name': 'John', 'last_name': 'Doe', 'age': 30}
 
-**ACCESING ITEMS**
+# key: first_name
+# value: John
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+////////////////////
+ACCESING ITEMS
+////////////////////
 
-x = person["first_name"] # or print("First Name:", person["first_name"])
-y = person["last_name"]
-z = person["age"]
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
-print("First Name", x) 
-print("Last Name:", y)
-print("Age:", z)
+print("First Name:", person["first_name"])
+print("First Name:", person["last_name"])
+print("First Name:", person["age"])
 
-print(person.keys())
-print(person.values())
-print(person.items())
+print(person.keys()) # dict_keys(['first_name', 'last_name', 'age']) - left value
+print(person.values()) # dict_values(['John', 'Doe', 30]) - right value
+print(person.items())# dict_items([('first_name', 'John'), ('last_name', 'Doe'), ('age', 30)]) - both value
 
-print(list(person.items())
-
-**get() METHOD**
-
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
-
-print(person.get("first_name"))
-
-print(person("hobby")) #. shows an error
+print(person.get("first_name")) # John
 print(person.get("hobby")) #. shows "none"
+print(person("hobby")) #. shows an error because theres no data inside 'hobby'
 
-**ADDING ITEMS**
+//////////////////////////////
+ADDING ITEMS TO DICTIONARY
+//////////////////////////////
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
 person["course"] = "BS Computer Science"
-print(person)
+print(person) # {'first_name': 'John', 'last_name': 'Doe', 'age': 30, 'course': 'BS Computer Science'}
 
-**CHANGING AN ITEM'S VALUE**
+//////////////////////////////
+CHANGING AN ITEM'S VALUE
+//////////////////////////////
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
-person["first_name"] = "Ryan"
-person["last_name"] = "Rye"
-print(person)
+person["first_name"] = "Rye"
+person["last_name"] = "Ryan"
+print(person) # {'first_name': 'Rye', 'last_name': 'Ryan', 'age': 30}
 
-**REMOVING AN ITEM**
-**pop() method removes an item with specified key name**
+//////////////////////////////
+REMOVING ITEMS FROM A DICTIONARY
+//////////////////////////////
+__________
+.pop()
+__________
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
 person.pop("age") # raise an error if you not specfied the key
-print(person)
+print(person) # {'first_name': 'John', 'last_name': 'Doe'}
+__________
+.del()
+__________
 
-**del() method**
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
 del person["age"]
-print(person)
+print(person) # {'first_name': 'John', 'last_name': 'Doe'}
 
-**GETTING THE LENGTH OF A DICTIONARY**
-**len() method**
+//////////////////////////////
+GETTING A LENGTH OF A DICTIONARY - .len() method
+//////////////////////////////
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
 print(len(person)) # 3
 
-**CHECKING KEY EXISTS**
+//////////////////////////////
+CHECKING IF KEY EXISTS
+//////////////////////////////
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
 if "age" in person:
 	print('the "age" key exists')
 
-**LOOPING THROUGH A DICTIONARY**
+////////////////////////////
+LOOPING THROUGH A DICTIONARY
+////////////////////////////
 
-person = {
-                    "first_name": "John", 
-                    "last_name": "Doe",
-                     "age": 30 }
+person = {  "first_name": "John", 
+            "last_name": "Doe",
+            "age": 30 }
 
 for key in person:
-	print(person[key])
+	print(person[key]) # John, Doe, 30
 
-**NESTED DICTIONARY**
+____________________
+NESTED DICTIONARY
+____________________
 
-employees = {
-	"manager": {
-		"name": "John Rye",
-		"age": 29
-},
-"programmer": {
+employees = { "manager": {
+	        "name": "John Rye",
+	        "age": 29 },
+             "programmer": {
 		"name": "Rye Ryan",
-		"age": 31
-}
-}
+		"age": 31 }}
+		
+print(employees) # {'manager': {'name': 'John Rye', 'age': 29}, 'programmer': {'name': 'Rye Ryan', 'age': 31}}
 
-print(employees)
-
-**ACCESSING NESTED DICTIONARY**
-
-print(employees["manager"]["name"])
-print(employees["programmer"]["name"])
+print(employees["manager"]["name"]) # John Rye
+print(employees["programmer"]["name"]) # Rye Ryan
