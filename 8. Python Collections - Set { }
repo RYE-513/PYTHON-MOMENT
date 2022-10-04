@@ -72,14 +72,9 @@ y = {3,4,5,6}
 print("x - y:", x - y) # x - y: {1, 2}
 print("y - x:", y - x) # y - x: {5, 6}
 
-
 //////////////////////////////
-SUMMARY OF SETS
+ADDING AN ITEMS IN SETS
 //////////////////////////////
-
-__________
-SAMPLE 1
-__________
 
 my_set = {'item1', 'item2', 'item3'}
 
@@ -88,45 +83,62 @@ my_set.add(2)
 my_set.add(2) # you can add once and can't duplicate same value
 print(my_set) # {1, 2, 'item1', 'item2', 'item3'}
 
+//////////////////////////////
+REMOVING AN ITEM IN SETS
+//////////////////////////////
+
+my_set = {1, 2, 'item1', 'item2', 'item3'}
 my_set.remove(1) # remove the specific item not index place.
+
 print(my_set) # {2, 'item1', 'item2', 'item3'}
 
-__________
-SAMPLE 2
-__________
+//////////////////////////////
+CONVERT LIST INTO SET
+//////////////////////////////
 
 my_list = [1, 2, 3, 3, 3, 4, 4, 5, 6, 1]
 my_set = set(my_list)
 
 print(my_set) # {1,2,3,4,5,6} - organized and removes duplicate items.
 
-__________
-SAMPLE 3
-__________
+//////////////////////////////
+COMBINING / EXTENDING A SET .union and .symmetric_difference()
+//////////////////////////////
 
 set1 = {'AMOGUS1', 'AMOGUS2', 'AMOGUS3', 'AMOGUS4'}
 set2 = {'AMOGUS5', 'AMOGUS6', 'AMOGUS7', 'AMOGUS8'}
 
-set3 = set1.union(set2)
-print(set3) # they will extend but it shows random and unorganized
+this_set = set1.union(set2) # they will combine all the value from set1 and set2 and it shows unorganized data.
+print(this_set) # {'AMOGUS2', 'AMOGUS4', 'AMOGUS6', 'AMOGUS1', 'AMOGUS8', 'AMOGUS7', 'AMOGUS3', 'AMOGUS5'}
 
-set3 = set1.intersection(set2)
-print(set3) # shows set()
+this_set = set2.symmetric_difference(set1) # same as .union()
+print(this_set) # they will extend but it shows random and unorganized - {'AMOGUS8', 'AMOGUS7', 'AMOGUS2', 'AMOGUS4', 'AMOGUS5', 'AMOGUS6', 'AMOGUS3', 'AMOGUS1'}
 
-set3 = set1.difference(set2)
-print(set3) # shows set 1 items
+//////////////////////////////
+set() and .difference(set2)
+//////////////////////////////
 
-set3 = set2.symmetric_difference(set1)
-print(set3) # they will extend but it shows random and unorganized
+set1 = {'AMOGUS1', 'AMOGUS2', 'AMOGUS3', 'AMOGUS4'}
+set2 = {'AMOGUS5', 'AMOGUS6', 'AMOGUS7', 'AMOGUS8'}
 
-set3 = set2.issubset(set1)
-print(set3) # FALSE because they are different values.
+this_set = set1.intersection(set2)
+print(this_set) # shows 'set()'
 
-set3 = set2.issuperset(set1)
-print(set3) # FALSE because they are different values.
+this_set = set1.difference(set2)
+print(this_set) # shows set 1 items value - {'AMOGUS3', 'AMOGUS2', 'AMOGUS1', 'AMOGUS4'}
 
-set3 = set2.isdisjoint(set1) 
-print(set3) # 
+/////////////////////////////////////////
+.issubset(), .issuperset(), .isdisjoint() 
+/////////////////////////////////////////
+
+this_set = set2.issubset(set1)
+print(this_set) # 'False' because they are different values.
+
+this_set = set2.issuperset(set1)
+print(this_set) # 'False' because they are different values.
+
+this_set = set2.isdisjoint(set1) 
+print(this_set) # True,  returns 'True' if none of the items are present in both sets, otherwise it returns 'False'.
 
 """
 .difference() | A notMid notB
