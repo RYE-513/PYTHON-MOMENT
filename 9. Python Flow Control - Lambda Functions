@@ -1,0 +1,27 @@
+LAMBDA FUNCTIONS
+- One Expressions, Multiple Arguments.
+- also called "Anonymous Function" 
+- are functions that do not have names
+- The result of the expression is totally returned 
+
+//////////
+SYNTAX
+//////////
+
+lambda arguments: expression 
+
+def add(x+y) : # NORMAL FUNCTION
+       return x+y
+
+////////////////////////
+SAMPLE LAMBDA FUNCTIONS
+////////////////////////
+
+print(add(10,5))
+
+add = lambda x, y: x + y  # Lambda Function
+print(add(10,5))# automatically returned
+
+subtract = lambda a, b : a - b
+print(subtract(4, 2))
+#. ans is "2"
