@@ -1,25 +1,36 @@
-is a **GROUP OF STATEMENTS** that perfroms a particular task.
+FUNCTIONS 
+- is a 'group of statements' that perfroms a particular task.
+
+__________
+SYNTAX
+__________
 
 def my_func():
 	x = 'RYE BSCS'
 	print(x)
 
-my_func() #. this is called "calling a function"
+my_func() # this is called "calling a function"
 
-**FUNCTION PARAMETERS/ARGUMENTS**
+//////////////////////////////
+FUNCTION PARAMETERS/ARGUMENTS
+//////////////////////////////
 
-Parameter - is a variable declared in the function " hello() "
-Argument - the valued passed to the function when its called.  e.g. " hello('RYE') " 'RYE' is the argument
+Parameter - is a variable that declared in the function 'hello()'
+Argument - the valued passed to the function when its called.  'hello('RYE')' - 'RYE' value is the argument of 'hello()' parameter
 
-**MULTIPLE PARAMETERS/ARGUMENTS**
+//////////////////////////////
+MULTIPLE PARAMETERS/ARGUMENTS
+//////////////////////////////
 
 def add_nums(num1, num2):
 	sum = num1 + num2
 	print(sum)
 
-add_nums(4,3) #. it will be raised an error if you only put one argument.
+add_nums(4,3) # it will be raised an error if you only put one argument.
 
-**DEFAULT ARGUMENTS**
+////////////////////
+DEFAULT ARGUMENTS
+////////////////////
 
 def hello(name = 'Rye'):
 	x = 'hello ' + name
@@ -28,7 +39,9 @@ def hello(name = 'Rye'):
 hello('John')
 hello()
 
+__
 or 
+__
 
 def hello(name):
 	x = 'hello ' + name
@@ -37,7 +50,9 @@ def hello(name):
 hello('John')
 hello('Rye')
 
-**KEYWORD ARGUMENTS**
+////////////////////
+KEYWORD ARGUMENTS
+////////////////////
 
 def my_func(fruit1, fruit2, fruit3):
 	print("I love ", fruit1)
@@ -46,9 +61,9 @@ def my_func(fruit1, fruit2, fruit3):
 
 my_func(fruit3 = 'grape', fruit2 = 'apples', fruit1 = 'orange')
 
-
-**THE RETURN STATEMENT**
-return statement is used to return a value to the function caller.
+////////////////////
+'RETURN' STATEMENT - return statement is used to return a value to the function caller.
+////////////////////
 
 What is the use of return statement?
 A return statement STOP the execution of a function, and returns control to the calling function
@@ -60,7 +75,9 @@ def add_nums(num1, num2):
 
 print(add_nums(4,3))
 
-*another example*
+_______________
+another example
+_______________
 
 def add_nums(num1, num2):
 	sum = num1 + num2
@@ -70,7 +87,7 @@ def add_nums(num1, num2):
 x = add_nums(4,3)
 print(x)
 
-**in this example, the print() function after the return statment will not be executed.**
+*in this example, the print() function after the return statment will not be executed.*
 
 def add_nums(num1, num2):
 	sum = num1 + num2
@@ -85,11 +102,17 @@ if you put return only it shows none
 • is used to handle a set of instructions that you want to use repeatedly
 • because of their complexity, are better self-contained in a sub program and called when it's needed
 • That means that a function is a piece of code written to carry out specific task
-"""
+
+////////////////////
+SUMMARY OF FUNCTIONS
+////////////////////
+
 Your functions should add two arguments and return the sum
 Write your simple_sum function here
 
+______________
 CORRECT SYNTAX
+______________
 
 def simple_sum() :
       num1 = int(input())
@@ -97,36 +120,63 @@ def simple_sum() :
       print(num1+num2)
 simple_sum()
 
-"""
+____________
 WRONG SYNTAX
+____________
 
 def simple_sum() :
        num1 = int(input())
        num2 = int(input())
        print(simple_sum(num1, num2)) # this is wrong.
 simple_sum()
-"""
-___
+
+////////////////
+FUNCTIONS SYNTAX
+////////////////
+________
+SAMPLE 1
+________
+
 def my_function() :
       print("hello from a function")
 my_function()
+
+________
+SAMPLE 2
+________
 
 def shorten_my_text(text) :
      print(text)
 shorten_my_text("this is my super text")
 
+________
+SAMPLE 3
+________
+
 def shorten_my_text(text) :
      print(text[0:15] + "...")
 shorten_my_text("this is my super text")
+
+________
+SAMPLE 4
+________
 
 def shorten_my_text(text,text2) :
      print(text[0:15] + "...")
      print(text2)
 shorten_my_text("this is my super text, 34")
 
+________
+SAMPLE 5
+________
+
 def my_func(tic,tac, toe) :
      print(tac)
-___
+
+________
+SAMPLE 6
+________
+
 def is_first_greater(first_num,second_num)  :
       if (first_num > second_num)  :
            return True  # return "Yes"
@@ -136,21 +186,22 @@ def is_first_greater(first_num,second_num)  :
 result = is_first_greater(3,17)
 print(result)   # print(f"3 > 17 is {result}")
 
-"""
+///////////////
 REPRESENTATION
+///////////////
 
 first_num     second_num
      ↓                       ↓
       is_first_greater
                   ↓
   Output (return) Value
-___
+
 num1 = 4
 num2 = 6
 
 result = is_first_greater(num1, num2)
 print(f"{num1} > {num2} is {result}")
-___
+
 def check(num) :
    if num > 2 :
      return 'A'
@@ -159,7 +210,19 @@ def check(num) :
    return 'C'
 
 result = check(6) # ans is 'A'
-___
+
+/////////////////////////
+FUNCTIONS SAMPLE PROJECTS
+/////////////////////////
+
+def my_func(  *  args) :
+     print(args[0])
+
+my_func(1,2,3)
+________________
+PROJECT SAMPLE 1
+________________
+
 def check_car(model,year,make) :
        if year > 2005 :
              print(f"Your {make} {model} is fine")
@@ -167,7 +230,8 @@ def check_car(model,year,make) :
             print (f"Your {make} {model} is old \n time to upgrade")
 
 check_car("ES", 2010, "Lexus") #if the format is not match in model, year, make it will turn error
-___
+
+
 def check_car(model,year,make) :
        if year > 2005 :
              print(f"Your {make} {model} is fine")
@@ -175,26 +239,27 @@ def check_car(model,year,make) :
             print (f"Your {make} {model} is old \n time to upgrade")
 
 check_car(year=2002, make='Acura', model='RL')
-___
+________________
+PROJECT SAMPLE 2
+________________
+
 def my_function(*my_inputs) :
       print("first input is "+my_inputs[0])
 
       print("last input is"+my_inputs[-1])
 
 my_function("Emilia","Arulo","Toby")
-___
-def my_func(  *  args) :
-     print(args[0])
+________________
+PROJECT SAMPLE 3
+________________
 
-my_func(1,2,3)
-___
 def my_function(country) :
      print("i am from "+country)
 
 my_function("Maharlika")
 my_function("Russia")
 my_function("Mongolia")
-___
+
 def my_function(country = "Unknown Place") :
      print("i am from "+country)
 
@@ -202,7 +267,11 @@ my_function("Maharlika")
 my_function("Russia")
 my_function() # no need to put " " inside the parameters
 my_function("Mongolia")
-___
+
+________________
+PROJECT SAMPLE 4
+________________
+
 my_function(["a", "b"])
 
 def my_function(food)  :
@@ -212,8 +281,3 @@ def my_function(food)  :
 Fruits = ["apple", "cherry", "banana"]
 
 my_function(fruits)
-
-#this syntax has a backup on Lenovo Laptop VM Machine RYE
-___
-def my_function(food)
-    pass # this keyword use to bypass an error.
