@@ -1,0 +1,219 @@
+is a **GROUP OF STATEMENTS** that perfroms a particular task.
+
+def my_func():
+	x = 'RYE BSCS'
+	print(x)
+
+my_func() #. this is called "calling a function"
+
+**FUNCTION PARAMETERS/ARGUMENTS**
+
+Parameter - is a variable declared in the function " hello() "
+Argument - the valued passed to the function when its called.  e.g. " hello('RYE') " 'RYE' is the argument
+
+**MULTIPLE PARAMETERS/ARGUMENTS**
+
+def add_nums(num1, num2):
+	sum = num1 + num2
+	print(sum)
+
+add_nums(4,3) #. it will be raised an error if you only put one argument.
+
+**DEFAULT ARGUMENTS**
+
+def hello(name = 'Rye'):
+	x = 'hello ' + name
+	print(x)
+
+hello('John')
+hello()
+
+or 
+
+def hello(name):
+	x = 'hello ' + name
+	print(x)
+
+hello('John')
+hello('Rye')
+
+**KEYWORD ARGUMENTS**
+
+def my_func(fruit1, fruit2, fruit3):
+	print("I love ", fruit1)
+	print("I love ", fruit2)
+	print("I love ", fruit3)
+
+my_func(fruit3 = 'grape', fruit2 = 'apples', fruit1 = 'orange')
+
+
+**THE RETURN STATEMENT**
+return statement is used to return a value to the function caller.
+
+What is the use of return statement?
+A return statement STOP the execution of a function, and returns control to the calling function
+
+def add_nums(num1, num2):
+	sum = num1 + num2
+	print(sum)
+	return sum
+
+print(add_nums(4,3))
+
+*another example*
+
+def add_nums(num1, num2):
+	sum = num1 + num2
+	print(sum)
+	return sum
+
+x = add_nums(4,3)
+print(x)
+
+**in this example, the print() function after the return statment will not be executed.**
+
+def add_nums(num1, num2):
+	sum = num1 + num2
+	return sum
+	print('this string will not be printed')
+
+print(add_nums(4, 3))
+
+the return statement will shows the specific string
+if you put return only it shows none
+
+• is used to handle a set of instructions that you want to use repeatedly
+• because of their complexity, are better self-contained in a sub program and called when it's needed
+• That means that a function is a piece of code written to carry out specific task
+"""
+Your functions should add two arguments and return the sum
+Write your simple_sum function here
+
+CORRECT SYNTAX
+
+def simple_sum() :
+      num1 = int(input())
+      num2 = int(input())
+      print(num1+num2)
+simple_sum()
+
+"""
+WRONG SYNTAX
+
+def simple_sum() :
+       num1 = int(input())
+       num2 = int(input())
+       print(simple_sum(num1, num2)) # this is wrong.
+simple_sum()
+"""
+___
+def my_function() :
+      print("hello from a function")
+my_function()
+
+def shorten_my_text(text) :
+     print(text)
+shorten_my_text("this is my super text")
+
+def shorten_my_text(text) :
+     print(text[0:15] + "...")
+shorten_my_text("this is my super text")
+
+def shorten_my_text(text,text2) :
+     print(text[0:15] + "...")
+     print(text2)
+shorten_my_text("this is my super text, 34")
+
+def my_func(tic,tac, toe) :
+     print(tac)
+___
+def is_first_greater(first_num,second_num)  :
+      if (first_num > second_num)  :
+           return True  # return "Yes"
+      else :
+           return False  # return "No"
+
+result = is_first_greater(3,17)
+print(result)   # print(f"3 > 17 is {result}")
+
+"""
+REPRESENTATION
+
+first_num     second_num
+     ↓                       ↓
+      is_first_greater
+                  ↓
+  Output (return) Value
+___
+num1 = 4
+num2 = 6
+
+result = is_first_greater(num1, num2)
+print(f"{num1} > {num2} is {result}")
+___
+def check(num) :
+   if num > 2 :
+     return 'A'
+   if num > 5 :
+     return 'B':
+   return 'C'
+
+result = check(6) # ans is 'A'
+___
+def check_car(model,year,make) :
+       if year > 2005 :
+             print(f"Your {make} {model} is fine")
+       else:
+            print (f"Your {make} {model} is old \n time to upgrade")
+
+check_car("ES", 2010, "Lexus") #if the format is not match in model, year, make it will turn error
+___
+def check_car(model,year,make) :
+       if year > 2005 :
+             print(f"Your {make} {model} is fine")
+       else:
+            print (f"Your {make} {model} is old \n time to upgrade")
+
+check_car(year=2002, make='Acura', model='RL')
+___
+def my_function(*my_inputs) :
+      print("first input is "+my_inputs[0])
+
+      print("last input is"+my_inputs[-1])
+
+my_function("Emilia","Arulo","Toby")
+___
+def my_func(  *  args) :
+     print(args[0])
+
+my_func(1,2,3)
+___
+def my_function(country) :
+     print("i am from "+country)
+
+my_function("Maharlika")
+my_function("Russia")
+my_function("Mongolia")
+___
+def my_function(country = "Unknown Place") :
+     print("i am from "+country)
+
+my_function("Maharlika")
+my_function("Russia")
+my_function() # no need to put " " inside the parameters
+my_function("Mongolia")
+___
+my_function(["a", "b"])
+
+def my_function(food)  :
+       for x in food :
+             print("Food is "+x)
+
+Fruits = ["apple", "cherry", "banana"]
+
+my_function(fruits)
+
+#this syntax has a backup on Lenovo Laptop VM Machine RYE
+___
+def my_function(food)
+    pass # this keyword use to bypass an error.
