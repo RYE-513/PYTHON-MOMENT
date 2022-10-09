@@ -27,3 +27,13 @@ print("My age is "+age)
 In this example, the fruits variable contains three strings
 fruits = ['bananas', 'apples', 'grapes']
 print(fruits)
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+PYTHON FRAMEWORK
+- such as Django, Flask, Numpy, Pandas, Pyramid 
+- these are the specific source code on what things to build. 
+- Web Applications, API, Game Developer, Mobile Applications
+
+PYTHON LIBRARY
+- is a set of source code packages or downlodable programming codes.
