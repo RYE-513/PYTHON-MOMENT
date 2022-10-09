@@ -1,4 +1,6 @@
-Formatting Strings
+/////////////////////
+FORMATTING STRINGS
+/////////////////////
 
 - We can format a string by adding substring/s within it.
 - The "format()" funtion allow us to format strings
