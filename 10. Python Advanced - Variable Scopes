@@ -1,4 +1,6 @@
-Variable Scopes
+//////////////////
+VARIABLE SCOPES
+//////////////////
 
 - The accessibility of variable depends on its scope
 - Two variable scopes
