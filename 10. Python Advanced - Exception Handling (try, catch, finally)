@@ -1,0 +1,205 @@
+//////////////////
+EXCEPTION HANDLING
+//////////////////
+
+- try • takes a block of codes to test for errors.
+- else • the keyword that defines the block of code to be executed "if there are no errors".
+- except • handles the block of code to be executed "if an error occurs".
+- finally • the keyword that defines the block of code to be executed "if the block raises an error or not.
+
+try:
+	print(a)
+except:
+	print("An error occured.")
+
+txt = "RYE BSCS"
+print(txt)
+
+____________________
+WITH ELSE STATEMENT
+____________________
+
+- The else statament is executed if there are no exceptions thrown.
+
+try:
+	print(a)
+except:
+	print("An error occured.")
+else:
+	print('No exception was thrown!')
+
+/////////////////////////
+THE FINALLY STATEMENT
+/////////////////////////
+
+- The finally statement is executed whether or not an exception is thrown.
+
+___________
+SAMPLE 1
+___________
+
+try:
+	a = "Hello World"
+	print(a)
+except:
+	print("An error occured")
+finally:
+	print("I'll give you 50 bucks just suck my d") #. A exception will be thrown here
+
+___________
+SAMPLE 2
+___________
+
+try:
+	print(b)
+except:
+	print('An error occured')
+finally
+	print('Hello, i am still printed')
+
+///////////////////
+THROW EXCEPTION
+///////////////////
+
+- We can intentionally throw an exception to stop the execution of a program.
+- the 'raise' keyword throws an exception.
+
+num = 10
+
+if num > 5:
+	raise Exception("num is more than 5")
+
+/////////////////////
+KINDS OF EXCEPTION
+/////////////////////
+
+try:
+	# statements
+except ExceptionKind:
+	# statements
+
+- the 'NameError' is thrown when you use a variable that is not defined.
+
+try:
+	# the x variable here is not defined
+	print(x)
+except NameError:
+	print("You used a variable that is not defined.")
+except:
+	print("Something went wrong")
+
+///////////
+SUMMARY
+///////////
+
+___________
+SAMPLE 1
+___________
+try:
+   print(var1)
+except:
+   print("something went wrong")
+else:
+   print("nothing went wrong")
+
+___________
+SAMPLE 2
+___________
+
+try:
+   var1 = 513
+   print(var1)
+except:
+   print("something went wrong")
+else:
+   print("nothing went wrong")
+
+___________
+SAMPLE 3
+___________
+
+x = input("What number would you like to divide by 50?  ")
+
+try:
+   number = int(x)
+except:
+   print("please enter a numerical value")
+   number = int(input())
+
+if number == 0 :
+   print("Please enter a non-zero number")
+else :
+   answer = 50/number
+   print(f"50 divided by {number} = {answer}")
+
+try :
+  #. check this for errors
+except :
+  #. do this if error occurs
+
+___________________________
+SAMPLE 4 - TRY CATCH LOOP
+___________________________
+
+y = [5, 20, 9, 50]
+
+while True :
+    x = input("select an item: ")
+    try :
+      num = int(x)
+      print(y[num])
+    except:
+       print("please enter a number from 0 to 3")
+    else:
+      print("thank you")
+      break;
+
+___________
+SAMPLE 5
+___________
+
+y = [5, 20, 9, 50]
+x = input("select an item")
+try :
+    num = int(x)
+    print(y[num])
+except:
+     print("please enter a number from 0 to 3")
+finally:
+    print("the try except is finished")
+
+______________________________
+SAMPLE 6 - TRY CATCH INPUT
+______________________________
+
+num1 = input("enter your amount received: ")
+num2 = input("enter the total receivable amount: ")
+
+try:
+    amount = int(num1)
+    total = int(num2)
+
+    answer = (amount/total)*100
+    print (f"{answer}%")
+
+except:
+    print("Sorry a total of zero is not allowed")
+
+_________________________________________________
+SAMPLE 7 - TRY CATCH INPUT WITH DOUBLE EXCEPT
+_________________________________________________
+
+num1 = input("enter your amount received: ")
+num2 = input("enter the total receivable amount: ")
+
+try:
+    amount = int(num1)
+    total = int(num2)
+
+    answer = (amount/total)*100
+    print (f"{answer}%")
+
+except ZeroDivisionError:
+    print("Sorry a total of zero is not allowed")
+except ValueError:
+    print("Sorry you must enter numerical value")
