@@ -1,0 +1,56 @@
+Inheritance
+- Inheritance is a feature that allows us to create a class that inherits the attributes (or properties) and methods of another class
+
+_______
+SYNTAX
+_______
+
+class Animal: # Parent Class "Main"
+	def __init__(self, name):
+		self.name = name
+
+	def walk(self):
+		print(self.name + ' walks')
+
+a = Animal('puppy')
+a.walk()
+
+- Connected to main class Animal.
+
+class Dog(Animal) # Child Class
+	def __init__(self, name, age):
+		super().__init__(name, age)
+
+	def sound(self):
+		print(self.name + ' Barks')
+
+- To inerit or connected from a Parent Class "Main Class". We simply pass the name of that class as a parameter of the child class.
+- Now we can use the properties and methods of both the Animal and Dog classes using just one instance.
+
+d = Dog('puupy', 1)
+d.walk()
+d.sound()
+
+_______
+SYNTAX
+_______
+
+class Animal: # Parent Class "Main"
+	def __init__(self, name):
+		self.name = name
+
+	def walk(self):
+		print(self.name + ' walks')
+
+class Dog(Animal) # Child Class
+	def __init__(self, name, age):
+		super().__init__(name, age)
+
+	def sound(self):
+		print(self.name + ' Barks')
+
+d = Dog('puupy', 1)
+d.walk()
+d.sound()
+
+- The super() and __ init __ functions are found in the Dog class allow us to inherit the properties and methods of the Animal Classq
