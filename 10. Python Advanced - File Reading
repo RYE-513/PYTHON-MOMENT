@@ -1,0 +1,271 @@
+//////////////
+FILE READING
+//////////////
+
+- Allow us to read, write/copy and delete files.
+
+_________________
+open() Function
+_________________
+
+- Allow us to read, create and update files.
+- File • the file path to be opened
+- Mode • mode in which file is opened for "string type and can either be any of the following.
+
+______
+MODES
+_______
+
+"r"	• open for reading.
+"w" • open for writing, creates the file if it does not exist.
+"a" • open for writing, appends to the end of the file.
+"x"  • Open for creating the file, falls if the file already exists.
+
+///////////////
+FILE READING
+///////////////
+
+- Inside "my_folder"
+-- demo.txt
+-- main_code.py
+
+#. demo.txt
+RYE BSCS
+I love python
+
+#. main_code.py
+f = open("demo.txt", "r")
+x = f.read()
+
+print(x)
+
+_______________
+READING LINES
+_______________
+
+#. main_code.py
+
+f = open("demo.txt", "r")
+first_line = f.readline()
+second_line = f.readline()
+
+print(second_line)
+print(first_line)
+
+//////////////////////////
+FILE WRITING/CREATING
+//////////////////////////
+
+- writing a file means modifying the content of a file or creating it if does not exist yet.
+- "w" • overwrites content of a file. creates file if it does not exist.
+- "a" • appends content to the end of a file, creates file if it does not exist.
+
+#. main_code.py
+
+f = open("demo.txt", "w")
+f.write("I love JavaScript")
+f.close()
+
+"a" mode which will append or add content to the end of the file.
+
+#. main_code.py
+
+f = open("demo.txt", "a")
+f.write("I love JavaScript")
+f.close()
+
+_____________________
+EXCLUSIVE CREATION
+_____________________
+
+"x" mode will ceate a file if it does not exist yet, if the file already exists it will throw an error.
+
+#. main_code.py
+
+f = open("notes.txt", "x")
+
+_________________
+DELETING A FILE
+_________________
+
+#. my_folder contains
+- demo.txt
+- my_photos_folder
+- main_code.py
+	
+import os
+
+os.remove("demo.txt") # deleting file
+os.rmdir("my_photos_folder") #deleting folder
+
+___________________________
+CHECKING IF FILE EXISTS
+___________________________
+
+#. main_code.py
+
+import os
+
+file_path = "demo.txt"
+if os.path.exists(file_path):
+	os.remove(file_path)
+else:
+	print("The file does not exist!")
+
+//////////
+SUMMARY
+//////////
+
+__________
+SAMPLE 1
+__________
+
+f = open("myfile")
+txt = read(f)
+print(txt)
+
+"""
+myfile.txt
+
+Hello! Welcome to my life
+this file is a testing process.
+Goodluck!
+"""
+
+#. reading specific line
+
+f = open("myfile")
+print(f.read())
+print(f.read(3))
+print(f.read(7))
+print(f.read(4))
+
+print(f.readline())
+print(f.readline())
+
+__________
+SAMPLE 2
+__________
+
+file = open("myfile")
+
+for line in file :
+    print(line) # print(file+"*")
+
+__________
+SAMPLE 2
+__________
+file = open("myfile")
+
+for line in file :
+    if "test" in line :
+         print(line)
+
+_________________________________________________
+SAMPLE 4 - FOR LOOP / CONDITION STATEMENTS
+_________________________________________________
+
+file = open("myfile")
+
+lineNum = 1
+for line in file :
+    if "test" in line :
+         print(lineNum) # print(f"Line {lineNum}: {line}")
+         lineNum += 1
+
+____________________________________________________
+SAMPLE 5 - READ AND WRITE | FOR LOOP / CONDITION
+____________________________________________________
+
+file = open("myfile")
+
+lineNum = 1
+for line in file :
+    if "!" in line :
+         print(f"Line {lineNum}: {line}")
+         lineNum += 1
+
+#. ADD
+
+file = open("myfile", "a")
+file.write("\n now the file has more content \n")
+file.close()
+
+f = open("myfile", "r")
+print(f.read())
+
+#. WRITE
+
+file = open("myfile", "w")
+file.write("\n now the file has more content \n")
+file.close()
+
+f = open("myfile", "r")
+print(f.read())
+
+_______________________________
+SAMPLE 6 - WRITE & TRY CATCH
+_______________________________
+
+file = open("myfile", "w")
+file.write("\n now the file has more content \n")
+file.close()
+
+try :
+   f = open("myfile2")
+   print(f.read())
+except FileNotFoundError:
+     print("file does not exist")
+
+______________________
+SAMPLE 7 - FUNCTION
+______________________
+
+#. File Handling with Function
+
+def readfile(filename):
+   f = open(filename) 
+   txt = f.read() 
+   return txt
+
+def writefile(filename, text):
+   #. text = str(text)
+   f = open(filename, "w") 
+   f.write(text) 
+   f.close()
+
+num = int(readfile("myfile")
+print(f"this file has been run {num} times")
+num +=1
+writefile("myfile", num)
+
+_________________________________
+SAMPLE 8 - MULTIPLE FUNCTIONS
+_________________________________
+
+#. File Handling with Multiple Function
+
+def readfile():
+   f = open("myfile") 
+   txt = f.read() 
+   return txt
+
+def writefile(text):
+   text = str(text) 
+   f = open("myfile", "w") 
+   f.write(text) 
+   f.close()
+
+try:
+   num = int(readfile())
+
+except:
+   num = 1 
+   writefile(num)
+   print("this is the first run")
+else: 
+   print(f"this file has been run {num}
+times")
+
+num += 1 
+writefile(num)
