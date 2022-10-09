@@ -1,0 +1,13 @@
+////////////
+ITERATORS
+////////////
+
+- The 'iter()' function returns an iterator from an iterble object.
+
+pets = ['dogs', 'cats', 'fish']
+
+iter_pets = iter(pets)
+
+print(next(iter_pets))
+print(next(iter_pets))
+print(next(iter_pets))
