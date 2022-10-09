@@ -1,0 +1,124 @@
+Classes and Objects
+- everything is object.
+- a class helps us to create objects.
+
+________
+SYNTAX
+________
+
+class Person:
+	first_name = ;John'
+	last_name = 'Doe'
+	age = 30
+
+//////////////////////////
+INSTANTIATING A CLASS
+//////////////////////////
+
+- an instance is the object created from the class
+
+obj = Person()
+
+print(obj.first_name)
+print(obj..last_name)
+print(obj.age)
+
+////////////////////
+CLASS ATRIBUTES
+///////////////////
+
+- student 1 is a unique instance of the Student class
+- after that we can now acess the properties of the instance (object)
+
+________
+SYNTAX
+________
+
+class Student:
+	def __init__(self, id_number, name, age):
+	    self.id_number = id_number
+	    self.name = name
+	    self.age = age
+
+student1 = Student(1234, "John Doe", 19)
+
+x = student1.id_number
+y = student1.name
+z = student1.age
+
+print('Student ID: ', x)
+print('Student NAME: ', y)
+print('Student AGE: ', z)
+
+- The self() parameter allow us to access the attributes and methods of a class.
+- The __ init __() function allows us to provide values for the attributes of a class.
+
+________
+SYNTAX
+________
+
+class Student:
+	def __init__(self, id_number, name, age):
+		self.id_number = id.number
+		self.name = name
+		self.age = age
+
+student1 = Student(5138, Rye, 21)
+student2 = Student(1645, Jon, 19)
+student3 = Student(0945, Ryan, 20)
+
+print("Student 1 ID Number: ", student1.id_number)
+print("Student 1 Name: ", student1.name)
+print("Student 1 Age: ", student1.age)
+
+print('')
+
+print("Student 2 ID Number: ", student2.id_number)
+print("Student 2 Name: ", student2.name)
+print("Student 2 Age: ", student2.age)
+
+print('')
+
+print("Student 3 ID Number: ", student3.id_number)
+print("Student 3 Name: ", student3.name)
+print("Student 3 Age: ", student3.age)
+
+////////////
+METHODS
+////////////
+
+- Methods are functions that can access the class attributes.
+- these methods should be defined (created) inside the class.
+
+________
+SYNTAX
+________
+
+class Student:
+	def __init__(self, id_number, name, age):
+		self.id_number = id.number
+		self.name = name
+		self.age = age
+
+	def greet_student(self):
+		print('Hello ' + self.name + ", How are you?')
+
+student1 = Student(3221, 'John Ryan', 21)
+student1.greet_student()
+
+- we used the self parameter to access the name attribute
+
+class Student:
+	def __init__(self, id_number, name, age):
+		self.id_number = id.number
+		self.name = name
+		self.age = age
+
+	def greet_student(self):
+		print('Hello ' + self.name + ", How are you?')
+
+student1 = Student(3221, 'John Ryan', 21)
+
+student1.greet_student('Welcome BS Computer Science Student')
+
+- the string below will be passed as the value of the greetings parameter.
