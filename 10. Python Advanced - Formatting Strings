@@ -1,0 +1,47 @@
+Formatting Strings
+
+- We can format a string by adding substring/s within it.
+- The "format()" funtion allow us to format strings
+
+/////////////////////
+PLACEHOLDERS { }
+/////////////////////
+
+- It help us control which part of the string should be formatted.
+- in this example, we will concatenate or add a substring to where the {} are placed
+
+x = 'I love {} very much!'
+text = x.format("myself")
+
+print(text)
+
+///////////////////////////
+MULTILPLE PLACEHOLDERS
+///////////////////////////
+
+x = "I love {}, {}, and {} very much!"
+text = x.format('Python', 'HTML', 'CSS')
+
+print(text)
+
+_______________
+USING INDEXES
+_______________
+
+- We can use index numbers to specify exactly where the values should be placed
+
+x = "I love {2}, {1}, and {0} very much!"
+text = x.format('Python', 'HTML', 'CSS')
+
+_____________________
+USING NAME INDEXES
+_____________________
+
+- We can also used named indexes to specify exactly where the values should be placed.
+- The arguments of the 'format( )' function should be in key/value pairs "key = value"
+
+x = The title of this song is {favesong} by {artist} and the genre is {genre}."
+
+text = x.format(favesong = 'Sometimes i see colors too', artist = 'Just Neighbors', genre = 'Math Rock / Midwest Emo')
+print(text)
+
