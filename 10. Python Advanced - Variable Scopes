@@ -1,0 +1,43 @@
+Variable Scopes
+
+- The accessibility of variable depends on its scope
+- Two variable scopes
+A. Global Scope
+B. Local Scope
+
+///////////////
+GLOBAL SCOPE
+///////////////
+
+- A variable that is defined (created) outside a function has a global scope. and it can be used anywhere in the program.
+
+sus = 'amogus'
+print('amogus') # sus can be used here
+
+///////////////
+LOCAL SCOPE
+///////////////
+
+- A variable that is defined (created) inside a function has a local scope.
+- A local variable can only be used inside the function.
+
+def my_func():
+	sus = 'amogus'	
+	print(sus) # 'sus' can be used here
+
+my_func()
+
+____________________
+The 'global' keyword
+____________________
+
+- We can force a local variable to be a global variable by using the "global" keyword.
+
+def my_func():
+	global sus
+	sus = 'amogus'
+	print(sus) # 'sus' can be used here
+
+my_func()
+
+print(sus) # 'sus' can be used here
