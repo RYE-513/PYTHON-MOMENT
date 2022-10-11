@@ -1,0 +1,80 @@
+/////////////////////////////////////////
+
+import requests
+
+response = requests.get("http://numbersapi.com/29")
+print(response.text)
+
+print(" ")
+
+response = requests.get("http://numbersapi.com/56")
+print(response.text)
+
+print(" ")
+
+response = requests.get("http://numbersapi.com/83")
+print(response.text)
+
+/////////////////////////////////////////
+
+import requests
+
+x = requests.get("https://easycoder.page.link/prog-qoute")
+
+my_response = x.text
+print(my_response)
+
+/////////////////////////////////////////
+
+import requests
+
+x = requests.get("https://easycoder.page.link/prog-qoute")
+
+#. convert JSON text to dictionary
+my_response = x.json()
+print(my_response["quote"])
+
+/////////////////////////////////////////
+
+import requests
+
+x = requests.get("https://easycoder.page.link/prog-qoute")
+
+# convert JSON text to dictionary
+my_response = x.json()
+
+print(my_response["quote"])
+print("     - By:  "  + my_response["author"])
+
+/////////////////////////////////////////
+
+import requests
+
+x = requests.get("https://api.exchangerate-api.com/v4/latest/USD")
+
+response = x.text
+print(response)
+
+/////////////////////////////////////////
+
+import requests
+
+x = requests.get("https://api.exchangerate-api.com/v4/latest/USD")
+
+response = x.json()
+print(response["rates"])
+print(response["rates"]["HKD"])
+
+/////////////////////////////////////////
+
+import requests
+
+base = input("Input the base currency")
+other = input ("Input the other currency")
+x = requests.get("https://api.exchangerate-api.com/v4/latest/USD"+base)
+
+response = x.json()
+conversion = (response["rates"]["others"])
+#. print(response["rates"]["others"])
+
+print(f"1 {base} = {conversion} {other}")
