@@ -1,0 +1,34 @@
+# BANK ACCOUNT OOP
+
+class Bank Account : 
+      def__init__(self, fname, account_balance) :
+              self.account_balance = account_balance
+              self.name = fname
+              print("Hello  "+fname)
+
+      def deposit(self, ammount) :
+              self.account_balance += amount
+              print(f"after depositing {amount} you now have a total of {self.account_balance}")
+
+      def withdraw(self, amount) :
+             self.account_balance -= amount
+             print(f"after withdrawing {amount} you now have a total of {self.account_balance}")
+
+# Don't forget to add "self." to account_balance.
+
+# MAIN PROGRAM OOP
+
+my_account = BankAccount("Charles",23)
+my_account.withdraw(14)
+my_account.deposit(100)
+
+////////////////////////////////////////////
+
+# EXERCISE
+
+class Coordinate :
+     def__init__(self, y, x) :
+          self.longitide =  y
+          self.latitude = x
+
+location = Coordinate(-73,25)
