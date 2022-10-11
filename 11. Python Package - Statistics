@@ -1,0 +1,15 @@
+import statistics
+
+dataList = [1,12,3,5,7,9,11]
+
+print("Mean:")
+print(statistics.mean(dataList))
+
+print("Median:")
+print(statistics.median(dataList))
+
+print("Variance:")
+print(statistics.variance(dataList))
+
+print("Standard Deviation:")
+print(statistics. stdev(dataList))
