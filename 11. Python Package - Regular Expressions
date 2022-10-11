@@ -1,0 +1,123 @@
+///////////////////////
+REGULAR EXPRESSIONS
+///////////////////////
+
+- are patterns used to match character combination in strings.
+
+'import re'
+
+//////////////////////////
+THE re.search() METHOD
+//////////////////////////
+
+- The re.search(regex, str) method searches for the given regular expression from a given string.
+- if there is a match the *match object* of the first occurence.
+- if there is no match, it retuens the *None*.
+
+import re
+regex = "hello"
+txt = "RYE BSCS"
+
+res = re.search(regex, txt)
+print("Index of the Start and End position: ", res.span())
+print("Index of the Start position: ", res.start())
+print("Index of the End position: ", res.end())
+
+////////////////////
+THE span() METHOD
+////////////////////
+
+- Method to return the indices of the start and end position of the match.
+
+//////////////////////////
+THE re.findall() METHOD
+//////////////////////////
+
+- The re.findall(regex,str) method returns a list that contains the matches found.
+
+import re
+regex = "Python"
+txt = "I love Python, because Python is fun to learn!"
+
+matches = re.findall(regex, txt)
+print("matches")
+
+///////////////////////
+THE re.sub() METHOD
+///////////////////////
+
+- replaces the matches found in a string
+
+• regex = regular expression patter
+• repl = string replacement
+• string = string to replace
+
+import re
+
+txt = "I love Python, because Python is fun to learn!"
+
+res = re.sub("Python", "JavaScript", txt)
+print(res)
+
+////////////////////
+META CHARACTERS
+////////////////////
+
+- adding more information, they don't match themselves.
+- '^' checks if a string starts with the given substring
+
+import re
+
+regex = "^mango"
+txt = "mango is sweet"
+
+x = re.findall(regex, txt)
+if x:
+	print("The string starts with a mango")
+else:
+	print("The string does not start with mango")
+  
+///////////////////////
+THE '$' METHOD
+///////////////////////
+
+- Checks if a string ends with the given substring.
+
+import re
+
+regex = "mango$"
+txt = "i love mango"
+
+x = re.findall(regex, txt)
+if x:
+	print("The string starts with a mango")
+else:
+	print("The string does not start with mango")
+
+_____________________________________
+The [] matches a set of characters
+_____________________________________
+
+- For example, [pyt] matches p, y, and t in a string.
+
+import re
+
+x = re.findall("[pyt]", "python")
+print(x)
+__________________________________________________________
+The '\' metacharacter signals various special sequences
+__________________________________________________________
+
+- For example '\'d matches any digits (0-9)
+
+import re
+
+x = re.findall("\d", "Rye is 21 years old, while Raiza is 24 years old.")
+print(x)
+
+- \D matches any non-digit character
+
+import re
+
+x = re.findall("\D", "Rye is 21 years old, while Raiza is 24 years old.")
+print(x)
