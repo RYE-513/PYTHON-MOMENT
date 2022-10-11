@@ -1,0 +1,234 @@
+Package - a package is simply a collection of python modules.
+
+////////////////
+NUMPY FRAMEWORK
+/////////////////
+
+Numpy is used for: 
+- scientific computing
+- working with arrays
+- Numpy Array are faster than Python Lists
+
+_____________________
+TO INSTALL A NUMPY
+_____________________
+
+cmd: pip install numpy / python -m pip install numpy
+
+______________________________________________
+NUMPY ARRAYS - better version of python lists
+______________________________________________
+
+/////////////////
+CREATING ARRAY
+/////////////////
+
+import numpy asnp
+arr = np.array([1, 2, 3, 4])
+print(arr)
+
+/////////////////////
+THE ndarray OBJECT
+/////////////////////
+- The object that gets created when we use the array() method is called ndarray.
+- This can be shown by checking the type of the object using the type() function
+
+import numpy as np
+
+arr = np.array([1, 2, 3, 4])
+x = type(arr)
+print(x)
+
+///////////////////////
+ELEMENTS IN AN ARRAY
+///////////////////////
+
+- The objects inside an array are called elements.
+- A standard numpy is required to have elements of the same data type.
+
+import numpy as np
+
+#. all elements are numbers
+x = np.array([1,2,3])
+
+#. all elements are strings
+y = np.array(["dog", "cat", "rabbit"])
+
+print(x)
+print(y)
+
+/////////////////
+ARRAY INDEXING
+/////////////////
+
+0 - first index
+1 - second index
+-1 - last index
+-2 - second to the last index
+
+import numpy as np
+
+pets = np.array(["dog", "cat", "fish"])
+print(pets[0])
+print(pets[1])
+print(pets[2])
+
+pets = np.array(["dog", "cat", "fish"])
+print(pets[-1])
+print(pets[-2])
+print(pets[-3])
+
+/////////////////
+ARRAY SLICING
+/////////////////
+- Slicing is used to access elements of an array using a range of two indexes
+
+first index - start of the tange
+second index - end of the range
+
+[start_index:end_index]
+
+import numpy as np
+
+arr = ["r", "y", "a", "n"]
+print(arr[0:3])
+
+arr = ["r", "y", "a", "n"]
+print(arr[1:]) #. included y to 'a' and 'n'
+
+arr = ["r", "y", "a", "n"]
+print(arr[:2]) #. exclude '2' result ['r', 'y']
+
+///////////////////
+NEGATIVE SLICING
+///////////////////
+
+import numpy as np
+
+arr = ["r", "y", "a", "n", "b"]
+print(arr[-4:-1]) # ['y', 'a', 'n']
+
+////////////////////////////////////
+NUMPY DATA TYPES - 'dtype' PROPERTY
+////////////////////////////////////
+
+import numpy as np
+
+x = np.array([1,2,3])
+print(x.dtype)
+
+x = np.array([1.1, 2.1, 3.1])
+print(x.dtype)
+
+x = np.array(["a", "b", "c"])
+print(x.dtype)
+
+x = np.array([True, False])
+print(x.dtype)
+
+////////////////////////////////
+ITERATE THROUGH A NUMPY ARRAY
+////////////////////////////////
+- iterating through an array means accessing its elements one-by-one
+
+import numpy as np
+
+pets = np.array(["dog", "cat", "fish"])
+
+for rye in pets:
+	print("this is my " +rye)
+
+import numpy as np
+
+pets = np.array(["dog", "cat", "fish"])
+
+for rye in np.nditer(pets):
+	print(rye)
+
+///////////////////////////////////////
+NUMPY JOIN - concatenate() FUNCTION
+///////////////////////////////////////
+
+import numpy as np
+
+x = np.array(["banana", "apple", "orange"])
+y = np.array(["grape", "cherry", "mango"])
+
+fruits = np.concatenate((x, y))
+print(fruits)
+
+import numpy as np
+
+x = np.array([1,2,3])
+y = np.array([4,5,6])
+z = np.array([7,8,9])
+
+nums = np.concatenate((x, y, z))
+print(nums)
+
+//////////////
+NUMPY SEARCH
+//////////////
+- 'where()' we can search for a specific value in  an array 
+- andreturns where in an array the given condition is met.
+
+import numpy as np
+
+pets = np.array(["dog", "cat", "dog", "dog"])
+dogs = np.where(pets == "dogs")
+
+print(dogs)
+
+////////////////////////////
+FIND EVEN AND ODD NUMBERS
+////////////////////////////
+
+- The 'where()' method can be used to find even or odd numbers in an array.
+- This can be done by using the remainder operator(%).
+
+- Simply use this operator with number 2 being the right operand
+- If it returns 0 then the number is even, if it returns 1 then the number is odd
+
+import numpy as np
+
+nums = np.array([10, 8, 5, 4, 2, 3, 1, 6, 9, 7])
+# returns the position of the even numbers
+even = np.where(nums % 2 == 0)
+# returns the position of the odd numbers
+odd = np.where(nums % 2 == 1)
+
+print("Even:")
+for x in even:
+	print(nums[x])
+
+print("Odd:")
+for y in odd:
+	print(nums[y])
+
+//////////////
+NUMPY SORT
+//////////////
+
+sort() allow us to sort arrays
+
+_________________________________
+SORTING FROM LOWEST TO HIGHEST
+_________________________________
+
+import numpy as np
+
+nums = np.array([5, 3, 4, 1, 2])
+sorted = np.sort(nums)
+
+print(sorted)
+
+__________________________
+SORTING ALPHABETICALLY
+___________________________
+
+import numpy as np
+
+persons = np.array(["ryan", "rye", "john"])
+sorted = np.sort(persons)
+
+print(sorted)
