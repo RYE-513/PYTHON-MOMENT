@@ -1,0 +1,91 @@
+////////////////////////////////////
+JSON - JAVASCRIPT OBJECT NOTATION
+////////////////////////////////////
+
+- contains data that are sent or received from a server.
+- simply a string, it follows a format similar to a Python Dictionary
+- use always double qoutes
+
+////////
+SYNTAX
+////////
+
+x = '{"first_name": "John", "last_name": "Doe", "age": 30}'
+
+print(x)
+
+//////////////////////////////////////
+JSON TO DICTIONARY - json.loads()
+//////////////////////////////////////
+
+import json
+
+x = '{"first_name": "John", "last_name": "Doe", "age": 30}'
+my_json = json.loads(x) # this method convert JSON to Dictionary
+
+a = my_json["first_name"]
+b = my_json["last_name"]
+c = my_json["age"]
+
+print("First Name: ", a)
+print("Last Name: ", b)
+print("Age: ", c)
+
+///////////////////////////////////
+DICTIONARY TO JSON - json.dumps()
+///////////////////////////////////
+
+import json
+
+x = {
+		'first_name': 'John',
+		'last_name': 'Ryan',
+		'Age': 21
+	}
+my_json = json.dumps(x)
+
+print(my_json)
+
+/////////////////////
+FORMATTING A JSON
+/////////////////////
+
+- a JSON file can be formatted using the indent parameter of json.dumps() method.
+- In this example, the json file is indented using 4 whitespace
+
+import json
+
+x = {
+		'first_name': 'John',
+		'last_name': 'Ryan',
+		'Age': 21
+	}
+my_json = json.dumps(x, indent = 4)
+
+print(my_json)
+
+".json" to save this file
+
+import json
+
+#. some JSON
+myJSON = '''{"menu": {
+"id" : "file",
+"value": "File",
+"popup": {
+    "menuitem": [{"value": "New",
+            "onclick": "CreateNewDoc()"}
+            ,{"value": "Open", "onclick":
+            "OpenDoc()"},{"value": "Close",
+            "onclick": "CloseDoc()"}]
+}
+}} '''
+
+#convert json format to dictionary
+myDict = json.loads(myJSON)
+
+print(myDict["menu"]["value"])
+
+#convert to JSON
+z = json.dumps(myDict)
+print(z)
