@@ -49,16 +49,20 @@ from import my_module as my
 #. the first_name variable
 print(first_name)
 
-**The dir() Function**
-dir() function returns a list of all the variables, functions and classes availale in a module
+///////////////////
+dir() FUNCTION
+///////////////////
+
+- dir() function returns a list of all the variables, functions and classes availale in a module
 
 import my_module
 x = dir(my_module)
 
 print(x)
 
-**Built-in Modules**
-came from local data of pycharm
+_____________________________________________________
+Built-in Modules - came from local data of pycharm
+_____________________________________________________
 
 import sysconfig
 
