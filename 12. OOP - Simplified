@@ -1,0 +1,85 @@
+"""
+- ANIMAL
+SLEEP     |     EAT ANYTHING
+
+- FISH
+• SLEEP
+• EAT ANYTHING
+• SWIM
+
+- BIRD
+• SLEEP
+• EAT ANYTHING
+• FLY
+"""
+ ___
+#. ANIMAL OOP
+
+class Animal :
+
+def sleep(self) :
+     print("This animal can sleep")
+
+def eat(self) :
+     print("This animal can eat")
+ ___
+#. BIRD OOP
+
+class Bird(Animal) :
+     def fly(self) :
+            print("This bird can fly")
+     ___
+#. FISH OOP
+
+class Fish(Animal) :
+     def swim(self) :
+            print("This fish can swim")
+___
+#. PARROT AND EAGLE OOP
+
+
+class Parrot(Bird) :  #. class Parrot(Animal)
+     def plants :
+           print("This parrot eats plant")
+
+class Eagle(Bird) :
+      def meat :
+           print("This Eagle eats meat")
+___
+#. MAIN PROGRAM OOP
+
+print("Bird")
+myBird = Bird()
+myBird.eat()
+myBird.fly()
+myBird.sleep()
+
+print("\n Fish")
+myFish = Fish()
+myFish.swim()
+myFish.sleep()
+myFish.eat()
+#. myFish.fly() it turns error because there is no "fly" in Fish class
+
+print("\n parrot and eagle")
+myParrot = Parrot()
+myEagle = Eagle()
+myParrot.eat()
+myEagle.eat()
+
+"""
+OUTPUT:
+Bird
+This animal can eat
+This bird can fly
+This animal can sleep
+
+Fish
+The fish can swim
+The animal can sleep
+The animal can eat
+
+parrot and eagle
+This parrot eats plant
+This eagle eats meet
+"""
