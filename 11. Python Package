@@ -1,0 +1,66 @@
+///////////////////
+MODULES PACKAGE
+///////////////////
+
+- A module is a Python File that can contain Variables, Functions and Classes
+- Modules allow us to split our code into multiple files.
+- Instead of writing all our codes inside a single python file, we can use modules and it easier to read, understand and maintain.
+
+________
+SYNTAX
+________
+
+#. my_module.py
+
+first_name = 'John'
+last_name = 'Rye'
+
+def add(x, y):
+	return x + y
+def multiply(x, y):
+	return x + y
+
+#. new_module.py
+
+import my_module
+
+module_name.variable_name
+module_name.function_name()
+
+import my_module
+
+print(my_module.first_name + my_module.last_name)
+print(my_module.add(3, 4))
+
+_______________________________
+USING ALIASES - 'as' keyword
+_______________________________
+
+import my_module as my
+
+print(my.first_name + my.last_name)
+print(my.add(3, 4))
+
+#. 'from' keyword - access directly
+
+from import my_module as my
+
+#. now we can directly use
+#. the first_name variable
+print(first_name)
+
+**The dir() Function**
+dir() function returns a list of all the variables, functions and classes availale in a module
+
+import my_module
+x = dir(my_module)
+
+print(x)
+
+**Built-in Modules**
+came from local data of pycharm
+
+import sysconfig
+
+x = sysconfig.get_python_version()
+print(x)
