@@ -1,0 +1,53 @@
+////////////////
+SAMPLE SYNTAX
+////////////////
+
+import datetime
+
+x = datetime.datetime.now()
+print(x)
+
+/////////////////////////
+CURRENT DATE AND TIME
+/////////////////////////
+
+import datetime as dt
+
+now = dt.datetime.now()
+print(now)
+
+///////////////////
+THE DATE OBJECT
+///////////////////
+
+from datetime import date
+
+today = date.today()
+print("Current Date: ", today)
+
+////////////////////////
+THE DATETIME OBJECT
+////////////////////////
+
+import datetiime
+
+datetime_obj = datetime.datetime.today()
+print("Current Datetime: ", datetime_obj")
+
+//////////////////////////////////
+CREATE A CUSTOM DATETIME OBJECT
+//////////////////////////////////
+
+import datetime as dt
+
+datetime_obj = dt.datetime(2000, 6, 4, 22, 21, 30, 546842)
+print("Datetime: ", datetime_obj)
+
+////////////////////////
+FORMAT DATETIME STRING
+////////////////////////
+
+import datetime as rye
+
+d = rye.datetime.today()
+print(d.strftime("%B %d %Y"))
