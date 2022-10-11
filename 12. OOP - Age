@@ -1,0 +1,64 @@
+#. MAIN PROGRAM OOP
+
+""""
+TO DO: 
+set the user's age to 16
+show the user's content method
+""""
+
+#. USER OOP
+
+user = Person()
+
+user.name = "Margaret"
+
+////////////////////////////////////////////////////////////
+
+# First File
+
+class Person :
+     def __init__(self, name, age) :
+             self.name = name
+             self.age = age
+             print("Creating "+name)
+     
+      def getInfo(self) :
+             print (f"\nName: {self.name}\nAge: {self.age}" )
+
+class Student(Person) :
+      def __init__(self, name, age, year) :
+                 super().__init__(name, age)
+                 self.gradeyear = year
+
+      def getInfo(Self) :
+             print (f"\nStudent Name: {self.name}\nAge: {self.age}\nGraduation Year: {self.gradyear}" )
+
+
+p = Person("Keith", 20)
+s = Student("Theo", 22, 2020)
+p.getInfo()
+s.getInfo()
+
+////////////////////////////////////////////////////////////
+
+# Second File
+
+class Person :
+     def __init__(self, name, age) :
+             self.name = name
+             self.age = age
+             print("Creating "+name)
+     
+      def getInfo(self) :
+             print (f"\nName: {self.name}\nAge: {self.age}" )
+
+class Student(Person) :
+
+      def getInfo(Self) :
+             print (f"\nStudent Name: {self.name}\nAge: {self.age}" )
+
+
+p = Person("Keith", 20)
+s = Student("Theo", 22)
+p.getInfo()
+s.getInfo()
