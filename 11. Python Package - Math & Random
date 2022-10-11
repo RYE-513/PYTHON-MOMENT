@@ -1,0 +1,88 @@
+/////////////////
+SYNTAX SAMPLES
+/////////////////
+
+import math
+
+x = math.sqrt(64)
+print(f'the square root of 64 is {x}')
+
+x = math.pow(2, 3) # same as 2 * 2 * 2
+print(x)
+
+x = math.ceil(2.6)
+y = math.floor(2.6)
+
+print(x)
+print(y)
+
+f = math.floor(4.3) 
+print(f'4.3 rounded down (floor) is {f}')
+
+c = math.ceil(4.3) 
+print(f'4.3 rounded up (ceiling) is {c}'
+
+/////////////////
+MATH CONSTANTS
+/////////////////
+
+import math
+
+x = math.pi
+y = math.e
+
+print(x)
+print(y)
+
+p = math.pi
+print(f'value of Pi is {p}')
+
+//////////////////////////
+TRIGONOMETRIC FUNCTIONS
+//////////////////////////
+
+import math
+
+x = math.cos(2)
+print(x)
+
+x = math.sin(2)
+print(x)
+
+x = math.tan(2)
+print(x)
+
+r = math.radians(90) 
+print(f'90 degrees to radians is {r}')
+
+d = math.gcd(36,64) 
+print(f'Greatest Common Divisor of 36 and 64 is {d}')
+
+//////////////////////////////////
+BUILT-IN MATHEMATICAL FUNCTIONS
+//////////////////////////////////
+
+x = abs(5)
+y = abs(-5)
+
+print(x)
+print(y)
+
+x = min(10, 20, 30)
+print(x)
+
+x = max(10, 20, 30)
+print(x)
+
+# MODULE RANDOM
+The random module lets us generate a random number
+
+import random
+
+x = random.random() # generates a random floating point in the range of 0.0 to 1.0
+print(x)
+
+import random
+
+x = random.randint(1,10)
+print(x)
