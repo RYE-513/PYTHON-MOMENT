@@ -1,16 +1,4 @@
-rye = 9
-bscs = 8
-
-
-if rye < bscs :
-        print('rye is less than bscs')
-else :
-    if rye == bscs :
-        print('rye is equal to bscs')
-    else :
-        print('rye is greater than bscs')
-        
-        
+   
     # BMI Calculator
     
     
