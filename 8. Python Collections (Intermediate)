@@ -85,8 +85,3 @@ print(d[2])
 a = {1:'JOHN', 2:'RYAN'}
 print(a[2])
 
-
-
-
-
-
