@@ -2,6 +2,7 @@ PYTHON
 
 • created by Guido Van Rossum a dutch programmer
 • High Level and OOP
+• Best on Machine Learning and Data Science and Web Programming
 • Dynamic Language "short syntax"
 
 • came from the idea of ABC interface with Amoeba O.S.
@@ -34,6 +35,12 @@ PYTHON FRAMEWORK
 - such as Django, Flask, Numpy, Pandas, Pyramid 
 - these are the specific source code on what things to build. 
 - Web Applications, API, Game Developer, Mobile Applications
+
+- DJango Framework is popular made
+• Instagram
+• Pinterest
+• Spotify
+• YouTube 
 
 PYTHON LIBRARY
 - is a set of source code packages or downlodable programming codes.
