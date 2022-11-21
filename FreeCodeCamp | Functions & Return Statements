@@ -1,0 +1,54 @@
+***********
+FUNCTIONS
+***********
+
+# Function 1
+def sleep_in(weekday, vacation):
+    if not weekday or vacation:
+        return True
+    else:
+        return False
+
+# Function 2
+
+def say_hi():
+       print("Hello User ")
+
+say_hi() # Hello User
+
+# Function 3
+
+def say_hi(name):
+       print("Hello " +name)
+
+say_hi(Rye) # Hello Rye
+say_hi(Ryan) # Hello Ryan
+
+# Function 4
+
+def say_hi(name, age):
+       print("Hello " +name+ ", and you are " +str(age)
+
+say_hi(Rye, 21) # Hello Rye and you are 21
+say_hi(Ryan, 25) # Hello Ryan and you are 25
+
+********************
+RETURN STATEMENTS
+********************
+
+# Return Statement 1
+def cube(num):
+       num * num * num
+
+cube(3) # shows nothing 
+print(cube(3) # shows nothing
+
+# Return Statement 2
+
+def cube(num):
+       return num * num * num
+       print("Rye Ryan BSCS") # this will not shown because return is input above
+#. return keyword computes this functions
+
+cube(3) # 27
+print(cube(3) # 27
