@@ -1,0 +1,50 @@
+***************
+READING FILES
+***************
+
+""""
+employees.txt
+
+Rye - Software Developer
+Ryan - Software Engineer
+John - Network-Cloud Engineer
+""""
+
+employee_file = open("employees.txt",  "r")
+employee_file.close()
+
+print(employee_file.readable()) # True because "r"
+print(employee_file.read()) # read all text
+
+print(employee_file.readline()) # read first line
+print(employee_file.readline()) # read second line
+print(employee_file.readline()) # read third line
+
+print(employee_file.readlines()) # read all line in lists format
+print(employee_file.readlines()[1]) # Ryan - Software Developer
+
+for employee in employee_file.readlines():
+      print(employee) # read all text
+
+****************
+WRITING FILES
+****************
+
+#. "a" is append meaning adding txt at the end.
+
+employee_file = open("employees.txt",  "a")
+employee_file.write("\nAmogus - Senior Programmer")
+#. it will not shown in output console but the employee_file will be updated
+#. if you run it again it will duplicate
+#. use "\n" to print in another line
+#. if you put "w" not "a" all the text will be deleted 
+
+employee_file.close()
+
+#Writing New File
+
+employee_file = open("newfile.txt", "w")
+employee_file.write("sussy baka")
+
+employee_file = open("index.html", "w")
+employee_file.write("<p> RYE RYAN </p>")
