@@ -1,0 +1,33 @@
+xxxxxxxxxxxxxxxxx
+BASIC CALCULATOR
+xxxxxxxxxxxxxxxxx
+
+______
+WRONG
+______
+
+num1 = input("Input a number: ") # input: 5
+num2 = input("Input a number: ") # input: 8.3
+result = num1 + num2
+print(result) # 58.3, because input not declare specific data type
+
+________
+CORRECT
+________
+
+num1 = int(input("Input a number: ") # input: 5
+num2 = int(input("Input a number: ") # input: 8.3
+result = num1 + num2
+print(result) # 13.3
+
+xxxxxxxxxxxxxxxxxxx
+MAD LIBS GENERATOR
+xxxxxxxxxxxxxxxxxxx
+
+song = input("You're Favorite Song: ") # You Lost Me 
+genre = input("Genre of the song: ") # Midwest Emo
+artist = input ("Artist of the song: ") # Tiny Moving Parts
+
+print("You're Favorite song is " +song)
+print(genre +"is the genre of this song")
+print(song + " was made by " + artist)
