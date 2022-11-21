@@ -1,0 +1,23 @@
+monthConversions = {
+      "Jan" : "January",
+      "Feb" : "February",
+      "Mar" : "March",
+      "Apr" : "April",
+      "May" : "May",
+      "Jun" : "June",
+      "Jul" : "July",
+      "Aug" : "August",
+      "Sep" : "September", 
+      "Oct" : "October",
+      "Nov" : "November",
+      "Dec" : "December"
+}
+
+print(monthConversions["Dec"]) # December
+print(monthConversions.get("Oct") # October
+
+print(monthConversions.get("Rye") # None
+print(monthConversions.get("Rye", "Not a Valid Key")
+#. Not a Valid Key.
+
+#. .get() is used to put default valid input if it's none
