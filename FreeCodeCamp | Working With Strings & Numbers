@@ -1,0 +1,36 @@
+_____________________
+WORKING WITH STRINGS
+_____________________
+
+word = 'Rye Ryan BSCS'
+print(word.upper().is_upper()) # RYE RYAN BSCS, True
+print(word.index("e")) # 2
+print(word.index("BSCS")) # 9
+print(word.index("x") # throw an error "value error"
+print(word.replace("BSCS", "PhD")) # Rye Ryan PhD
+
+addWord = 'RYE'
+addWord += ' RYAN'
+print(addWord) # RYE RYAN
+
+_____________________
+WORKING WITH NUMBERS
+_____________________
+
+my_num = 8
+print(str(my_num) + " is my angel number"))
+#. 8 is my angel number
+print(my_num + " is my angel number")
+#. throw an error
+
+print(pow(2, 3)) # 8
+print(abs(-18)) # 18
+print(max(4, 6)) # 6
+print(min(4, 6)) # 4
+
+from math import * 
+#. this package give us more access in math module
+
+print(floor(3.8)) # 3
+print(ceil(3.8)) # 4
+print(sqrt(36)) # 6.0
