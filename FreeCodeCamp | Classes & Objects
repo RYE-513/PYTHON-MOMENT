@@ -1,0 +1,22 @@
+# Student.py
+
+Class Student: # "self" is actual object
+
+def __init___(self, name, age, major, gpa, probation):
+           self.name = name
+           self.age = age
+           self.major = major
+           self.gpa = gpa
+           self.probation = probation
+
+# App.py
+
+import Student from Student
+# import student - filename "student.py"
+# from student - Class "Student"
+
+Student1 = Student("Rye", "21", "BSCS", 1.8, False)
+Student2 = Student("Ryan", "25", "BSCpe", 3.5, True)
+Student3 = Student("John", "23", "BSIS", 2.4, False)
+
+print(Student3.gpa) # 2.4
