@@ -1,6 +1,6 @@
-xxxxxxxxxxxxxxxxx
+******************
 BASIC CALCULATOR
-xxxxxxxxxxxxxxxxx
+******************
 
 ______
 WRONG
@@ -20,9 +20,9 @@ num2 = int(input("Input a number: ") # input: 8.3
 result = num1 + num2
 print(result) # 13.3
 
-xxxxxxxxxxxxxxxxxxx
+********************
 MAD LIBS GENERATOR
-xxxxxxxxxxxxxxxxxxx
+********************
 
 song = input("You're Favorite Song: ") # You Lost Me 
 genre = input("Genre of the song: ") # Midwest Emo
