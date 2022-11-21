@@ -1,0 +1,18 @@
+value = 10/0 # if you put this in here the except print will not be run
+
+try:
+value = 10 / 0 # when you put this inside try block the except print will be run
+num = int(input("Enter a number: "))
+print(num)
+except:
+   print("Enter a number not strings")
+
+# Handle Two Exceptions
+
+try
+num = int(input("Enter a number: "))
+print(num)
+except ZeroDivisionError: # ZeroDivisionError as err
+   print("Divided by Zero") # print(err) shows given error
+except ValueError:
+   print("Invalid Input")
