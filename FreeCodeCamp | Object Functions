@@ -1,0 +1,24 @@
+# App.py
+
+from Student import Student
+# import student - filename "student.py"
+# from student - Class "Student"
+
+Student1 = Student("Rye", "21", "BSCS", 3.1)
+Student2 = Student("Ryan", "25", "BSCpe", 3.5)
+
+print (student1.on_honor_roll())
+
+# Student.py
+Class Student: # "self" is actual object
+
+def __ init ___(self, name, major, gpa):
+           self.name = name
+           self.major = major
+           self.gpa = gpa
+
+def on_honor_roll(self):
+       if self.gpa > 3.5:
+          return True
+       else:
+          return False
