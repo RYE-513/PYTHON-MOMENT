@@ -1,0 +1,57 @@
+# MainProgram.py
+
+box1 = Box()
+dimensions = inout("Enter box 1 dimensions ex. 1 2 3").split()
+
+box1.length = int(dimensions[0])
+box1.width = int(dimensions[1])
+box1.height = int(dimensions[2])
+
+box2 = Box()
+dimensions = inout("Enter box 1 dimensions ex. 1 2 3").split()
+
+box2.length = int(dimensions[0])
+box2.width = int(dimensions[1])
+box2.height = int(dimensions[2])
+
+def canBox1FitInTheBox2(box1, box2) :
+    # TODO: Use the getLongestSide and getShortestSide methods in the Box Class to determine if box1 will fit in box2 then return true or flase
+    
+    # Hint: if the longest dimensions of box1 is smaller than the shortest dimesnsions of box2, then box1 fits in box2
+    if(box1.getLongestSide() < box2.getShortestSide()) :
+        return True
+    else :
+        return False
+        
+if canBox1FitInTheBox2(box1, box2) == True :
+    print("box1 will fit in box2")
+else :
+    print("box1 wont fit in box2")
+    
+# Box.py
+
+class Box:
+    length = 0
+    width = 0
+    height = 0
+    
+    #.This method will check the length, width, height.
+    #. then it will output which dimensions is the longest
+    
+    def getLongestSide(self) :
+        self.max = self.length
+        if self.width > self.max :
+            self.max = self.width
+        if self.height > self.max :
+            self.max = self.height
+		return self.max
+            
+    # This method should output which dimensions is the shortest
+    
+    def getShortestSide(self):
+         self.min = self.length
+        if self.width > self.min :
+            self.min = self.width
+        if self.height > self.min :
+            self.min = self.height
+		return self.min
