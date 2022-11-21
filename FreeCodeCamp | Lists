@@ -1,0 +1,24 @@
+bands = ["Tiny Moving Parts", "Turnover", "DIIV"]
+genre = ["Math Rock", "Shoegaze", "Post Rock"]
+genre[1] = "Dream Pop"
+print(genre) # ["Math Rock", "Dream Pop", "Post Rock"]
+
+genre.extends(bands)
+print(genre)
+#. ["Math Rock", "Shoegaze", "Post Rock", "Tiny Moving Parts", "Turnover", "DIIV"]
+
+artist.append("American Football")
+print(artist) #. ["Tiny Moving Parts", "Turnover", "DIIV", "American Football"]
+
+artist.insert(0, "Malicious Minds")
+print(artist) #. ["Malicious Minds", "Tiny Moving Parts", "Turnover", "DIIV", American Football]
+
+.remove - remove specific index item
+.clear - clear all the item lists
+.pop - remove item lists at the end
+
+.count - check the duplicate item index
+.sort - arrange all items alphabetically
+.reverse - literally reverse those items
+
+artist2 = artist.copy()
