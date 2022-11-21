@@ -1,0 +1,13 @@
+# Create a function that censors profanity. Each occurence of profanity in the input text should replaced with "****", then the new text should be returned
+
+def cleanText(ctext, censorList) :
+    # Your function should replace all censored words in the text with '****'
+    pass # replace 'pass' with your funtion content
+
+theText = "A baby donkey is called an ass nigga not an idiot!"
+theCensorList = ["ass", "nigga", "idiot"]
+
+print(cleanText(theText, theCensorList))
+# Output should be "A baby donkey is called an **** **** not an ****!"
+
+# HINT: You can create a loop that goes through all words in the censorList, for each censored word, replace every occurence of that word in your text with '****'
