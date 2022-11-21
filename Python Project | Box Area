@@ -1,0 +1,33 @@
+# MainProgram.py
+
+box1 = Box()
+box1.width = 5
+box1.length = 6
+box1.height = 4
+
+box2 = Box()
+box2.width = 11
+box2.length = 2
+box2.height = 4
+
+print(f"Amount of space in box1 is {box1.getVolume()}")
+print(f"Amount of space in box2 is {box2.getVolume()}")
+
+print(f"Amount of surface area for box1 is {box1.getSurfaceArea()}")
+print(f"Amount of surface area for box2 is {box2.getSurfaceArea()}")
+
+# Box.py
+class Box:
+    length = 0
+    width = 0
+    height = 0
+    
+    def __init__ (self, length, width, height) :
+        
+    def getVolume(self) :
+        volume = self.length * self.width * self.height
+        return volume
+    
+    def getSurfaceArea (self) :
+        surface_area = ((self.length * self.width) + (self.width * self.height) + (self.height * self.length))
+        return surface_area
