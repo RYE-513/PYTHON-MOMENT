@@ -39,3 +39,26 @@ def raise_to_power(base_num, power_num):
        return result
 
 print(raise_to_power(2, 3)) # 8
+
+*******************************
+2D LISTS AND NESTED FOR LOOPS
+*******************************
+
+number_grid = [
+            [1, 2, 3],
+            [4, 5, 6],
+            [7, 8, 9,],
+            [0]
+]
+
+print(number_grid[0][2]) # 3
+print(number_grid[2][1]) # 8
+print(number_grid[1][1]) # 5
+
+for row in number_grid:
+      print(row) # shows entire num_grid input
+
+for row in number_grid:
+     for col in row:
+     print(col)  # print all the column numbers
+
