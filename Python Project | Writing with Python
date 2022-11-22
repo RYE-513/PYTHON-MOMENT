@@ -1,0 +1,11 @@
+# Complete the writefile function which should write "writing with python" to myfile
+
+def writefile():
+    print("Rye Ryan BSCS")
+    
+def readfile():
+    f = open("myfile", "r") #. myfile have need actual file
+    print(f.read())
+    
+writefile()
+readfile()
