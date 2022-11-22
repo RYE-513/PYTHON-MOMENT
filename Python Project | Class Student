@@ -1,0 +1,21 @@
+class Person:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        print("Creating: "+name)
+        
+    def getInfo(self):
+        print(f"\nName: {self.name}\nAge: {self.age}")
+        
+class Student(Person):
+    def __init__(self, name, age, year):
+        super().__init__(name, age)
+        self.gradyear = year
+        
+    def getInfo(self):
+        print(f"\nStudent Name: {self.name}\nAge: {self.age} \nGraduation Year: {self.gradyear}")
+        
+p = Person("Rye", 21)
+s = Student("Ryan", 18, 2022)
+p.getInfo()
+s.getInfo()
