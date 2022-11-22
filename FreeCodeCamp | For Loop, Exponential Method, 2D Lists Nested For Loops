@@ -29,7 +29,9 @@ for c in given:
     
 print(to_return) # ABBCC
 
-# FOR LOOP TRIPLE RANGE
+___________________________
+# FOR LOOP - TRIPLE RANGE
+___________________________
 
 numbers = range(5, 10, 2)
 for number in numbers:
