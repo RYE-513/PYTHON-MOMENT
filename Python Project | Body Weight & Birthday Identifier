@@ -1,0 +1,21 @@
+**************
+BODY WEIGHT
+**************
+
+weight = int(input("Weight: "))
+unit = ("(K)g or (L)bs: ")
+
+if unit.upper() == "K":
+        converted = weight / 0.45
+        print("Weight in lbs: " + str(converted))
+else:
+         converted = weight * 0.45
+         print("Weight in Kgs: " + str(converted))
+
+***********************
+BIRTH YEAR IDENTIFIER
+***********************
+
+birth_year = int(input("Input Birth Year"))
+age = 2022 - birth_year
+print(f"Your age is {age}")
