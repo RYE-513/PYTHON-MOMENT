@@ -1,0 +1,45 @@
+*********************
+DICTIONARY ACTIVITY
+*********************
+
+#. This code will produce an error if the user doesn't
+enter a, b, or c 
+#. Modify this program so that the KeyError is handled
+
+myDict = {"a": "awesome", "b": "best", "c":"creative"} print(f"select a letter {myDict.keys()}")
+
+ans = input()
+print(myDict[ans]),
+
+******************
+DICTIONARY EXAM
+******************
+
+exam = {"Questions":
+                 ("Where is Rome?","C in CIA is?"
+                  ,"Capital City of USA" ,"Shape with 5 sides"
+                  ,"C in is?"), 
+
+              "Answers":("Italy","Central", "Washington D.
+               ,"Pentagon", "Central")}
+
+#. Create two variables, assign the question tuple fron
+exam to one variable and the answers to the other
+variable.
+
+#. Merge both tuples by zipping them, then convert the
+zipped data into a list
+#. Remove the duplicates in the list by converting it tc
+set then back to list
+
+#display the results
+
+"""
+The output should look similar to this 
+(the order might different):
+
+[('Where is Rome?', 'Italy'),
+('Shape with 5 sides', 'Pentagon'),
+('C in CIA is?', 'Central'),
+('Capital City of USA',  'Washington D.C.')]
+"""
