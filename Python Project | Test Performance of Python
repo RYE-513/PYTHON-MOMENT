@@ -1,0 +1,13 @@
+
+import time
+
+start_time = time.time()
+
+value = 0
+for i in range(0, 99000000):
+      value = i
+
+print(value)
+
+elapsed = "%s seconds" % (time.time() - start_time)
+print("Done in:  " + elapsed)
