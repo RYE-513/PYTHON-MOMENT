@@ -1,0 +1,17 @@
+import datetime
+
+utc_time = datetime.datetime.now().strftime("%c\nMinute:%M, Second: %S")
+
+#. complete the readfile function which should dsplay the contents of myfile
+
+def readfile():
+    pass
+
+# complete the savetime function which should write the current time to myfile
+# use the utc_time variable to get the current time
+
+def savetime():
+    pass
+
+readfile()
+savetime()
