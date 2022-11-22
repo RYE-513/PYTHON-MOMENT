@@ -1,0 +1,14 @@
+# modify this code so that you can convert more than one unit
+# Ex. '1 GBP = 1.75 CAD"
+# '30 GBP = 52.50 CAD' should be displayed if the user enters 30
+
+import requests
+
+base = input("Input the base currency: ")
+other = input("Input the other currency: ")
+
+x = requests.get('http://api.exchangerate-api.com/v4/latest/' +base)
+
+response = x.json()
+conversion = response['rates'][other]
+print(f'1 {base} = {conversion} {other}')
