@@ -29,6 +29,12 @@ for c in given:
     
 print(to_return) # ABBCC
 
+# For Loop Triple Range
+
+numbers = range(5, 10, 2)
+for number in numbers:
+     print(number)
+
 **********************
 EXPONENTIAL FUNCTION
 **********************
