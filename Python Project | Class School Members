@@ -1,0 +1,36 @@
+# SchoolMember.py
+
+class SchoolMember:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print("Creating "+name)
+    
+    def getInfo(self):
+        print(f"Name: {self.name}")
+        print(f"Name: {self.age}")
+        
+        
+# Student.py
+
+class Student(SchoolMember):
+    def __init__(self,name,age,year):
+        super().__init__(name,age)
+        self.gradyear = year
+        
+    def getInfo(self):
+        print(f"Student Name: {self.name}")
+        print(f"Age: {self.age}")
+        print(f"Graduation Year: {self.gradyear}")
+    
+# Staff.py
+
+class Staff :
+    pass
+
+# MainProgram.py
+
+student1 = Student('Guiseppe', 19, '2024')
+staff1 = Staff('Rye', 21, 'AMOGUS58')
+student1.getInfo()
+staff1.getInfo()
