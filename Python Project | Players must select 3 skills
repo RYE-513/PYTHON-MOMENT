@@ -1,0 +1,20 @@
+import math
+# Players must select 3 skills
+
+skills = [
+      'Farming',
+      'Mining',
+      'Crafting',
+      'Healing',
+      'Melee',
+      'Archery',
+      'Alchemy',
+      'Stealth',
+      'Persuasion',
+      'Mobility'
+]
+
+# Total number of character variation
+num skills = len(skills)
+variations = math.comb(num_skills, 3)
+print(variations)
