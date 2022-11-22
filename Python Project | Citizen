@@ -1,0 +1,29 @@
+# METHOD 1
+
+citizens = [('Steve', 10), ('Mark', 8), ('Chris', 19)]
+
+def tax(citizen):
+       name = citizen[0]
+       taxed_balance = citizen[1]*0.93
+       return (name, taxed_balance)
+
+taxed_citizens = map(tax, citizens)
+# taxed_citizens = list(map(tax, citizens))
+print(taxed_citizens)
+
+# METHOD 2
+
+citizens = [('Steve', 10), ('Mark', 8), ('Chris', 19)]
+
+def tax(citizen):
+       name = citizen[0]
+       taxed_balance = citizen[1]*0.93
+       return (name, taxed_balance)
+
+taxed_citizens = [ ]
+
+for citizen in citizens :
+      taxed_citizen = tax(citizen)
+      taxed_citizens.append(taxed_citizen)
+
+print(taxed_citizens)
