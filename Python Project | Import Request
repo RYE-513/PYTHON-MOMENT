@@ -1,0 +1,6 @@
+import requests
+
+x = requests.get('https://easycoder.page.link/prog-qoute')
+
+my_response = x.text
+print(my_response)
