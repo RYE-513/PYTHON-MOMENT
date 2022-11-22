@@ -1,0 +1,10 @@
+import requests
+
+x = requests.get('https://easycoder.page.link/prog-qoute')
+
+#. Convert JSON Text to Dictionary
+
+my_response = x.json()
+
+print(my_response["qoute"])
+print("      - By:   " + my_response["author"])
