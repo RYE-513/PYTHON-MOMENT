@@ -8,6 +8,40 @@ while i < 10:
        print(i)
        i += 1
 print("Done with loop")
+_________________________
+# WHILE LOOP / FOR LOOP
+_________________________
+
+numbers = [1, 2, 3, 4, 5]
+for item in numbers:
+      print(item)
+
+i = 0
+while i < len(numbers):
+         print(numbers[i])
+         i = i +1 
+
+num1 = 1
+________________
+# WHILE LOOP '*'
+________________
+
+i = 1
+
+while i <= 10:
+     print(i * '*')
+     i = i + 1
+_____________________________________
+# WHILE LOOP - EVEN AND ODD NUMBERS 
+_____________________________________
+
+while(num <= 1000):
+         print(f'elif num == {num}:')
+         if(num % 2 == 0):
+             print('\tprint(\'EVEN\')')
+         else:
+             print('\tprint(\'ODD\')')
+        num += 1
 
 ************************
 BUILDING GUESSING GAME
