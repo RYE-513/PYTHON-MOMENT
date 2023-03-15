@@ -1,0 +1,647 @@
+_________
+STRINGS
+_________
+
+name = 'Rye Ryan BSCS'
+print(amogus[:]) # Rye Ryan BSCS
+print(amogus[1:-1] # ye Ryan BSC
+print(name.find('H')) # '-1' meaning theres no existing character
+print(name.replace('BSCS', 'PhD')) # Rye Ryan PhD
+
+___________________
+FORMATTED STRINGS
+___________________
+
+first = 'Rye'
+last = 'Ryan'
+# message = first + ' [ ' + last + '] is a code
+print(f'{first} [{last}] is a coder') # Rye [Ryan] is a coder
+
+__________________
+HAS GOOD CREDIT
+__________________
+
+"""
+Price of a house is P1M
+if buyer has a good credit,
+they need to put down 10%
+Otherwise
+they need to put down 20%
+print the down payment
+"""
+
+price = 1000000
+has_good_credit = True
+
+if has_good_credit:
+    down_payment = 0.1 * price
+else:
+    down_payment = 0.2 * price
+print(f"Down Payment: {down_payment}")
+
+_________________________________
+IF NAME IS LESS THAN 3
+_________________________________
+
+"""
+if name is less than 3 characters long
+name must be at least 3 characters
+otherwise if it's more than 50 characters long
+name can be a maximum of 50 characters
+otherwise
+name looks good!
+"""
+
+name = input("Enter a word: ")
+
+if len(name) < 3:
+   print("Name must be at least 3 characters long)
+elif(name) > 50:
+   print("Name must be a maximum 50 characters long)
+else:
+   print("Name Looks good")
+
+__________
+CAR GAME
+__________
+
+# WITHOUT NESTED CONDITION AND WITHOUT WHILE = TRUE
+command = ""
+
+while command != "quit":
+    command = input("> ").lower() # this input will be force convert as lowercase
+    if command == "start":
+        print("Car Started...")
+    elif command == "stop":
+        print("Car Stopped...")
+    elif command == "Help":
+        print("""
+start - to 'start' the car
+stop - to 'stop' the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break # this 'break' will automatically close the console
+    else:
+        print("Sorry, I don't understand that")
+
+# WITH NESTED CONDITION AND WHILE = TRUE
+command = ""
+started = false
+
+while True:
+    command = input("> ").lower()
+    if command == "start":
+        if started:
+             print("Car is already started!")
+        else:
+             started = True
+             print("Car Started...")
+    elif command == "stop":
+        if started:
+             print("Car is already stopped!")
+        else:
+             started = False
+             print("Car Stopped...")
+        print("Car Stopped...")
+    elif command == "Help":
+        print("""
+start - to 'start' the car
+stop - to 'stop' the car
+quit - to quit
+        """)
+    elif command == "quit":
+        break # this 'break' will automatically close the console
+    else:
+        print("Sorry, I don't understand that")
+
+__________
+FOR LOOP
+__________
+
+for item in 'Python':
+    print(item) # \n Python
+
+for item in range(5, 10, 2) 
+    print(item) # 5 7 9
+
+prices = [10, 20, 30]
+
+total = 0
+for price in orices:
+    total += price
+print(f"Total: {total}")
+
+for x in range(4):
+    for y in range(3):
+        print(f"({x}, {y})") # (0,1) (0,2) .... (2,1)
+
+numbers = [5, 2, 5, 2, 2]
+for x_count in numbers:
+    print('x' * x_count) # xxxxx xx xxxxx xx xx
+
+numbers = [5, 2, 5, 2, 2]
+for x_count in numbers:
+    output = ""
+    for count in range(x_count):
+        output += 'x'
+    print(output)
+
+_____
+LIST
+_____
+
+names = ['Rye', 'Ryan', 'Amogus', 'Johny', 'John']
+print(names[2:]) # ['Amogus', 'Johny', 'John'] - 2 index then print until the last item in List
+print(names) # ['Rye', 'Ryan', 'Amogus', 'Johny', 'John']
+
+# WRITE A PROGRAM TO FIND THE LARGEST NUMBER IN A LIST
+
+number = [3, 6, 2, 8, 4, 10]
+max = numbers[0]
+
+for number in numbers:
+    if number > max:
+       max = number
+print(max) # 10
+
+number = [3, 6, 2, 8, 4, 10]
+print(numbers.sort()) # 2, 3, 4, 6, 8, 10
+print(numbers.reverse()) # 10, 8, 6, 4, 2
+
+numbers = [4, 9, 5, 11, 18]
+numbers2 = numbers.copy() # [4, 9, 5, 11, 18] - copy the list items in 'numbers'
+numbers.append(10)
+
+print(numbers2) # [4, 9, 5, 11, 18]
+
+______________________________________________________
+WRITE A PROGRAM TO REMOVE THE DUPLICATES IN  A LIST
+______________________________________________________
+
+
+numbers = [2, 2, 4, 6, 3, 4, 6, 1]
+uniques = []
+
+for number in numbers:
+    if number not in uniques:
+       uniques.append(number)
+print(uniques) # [2, 4, 6, 3, 1]
+
+________
+TUPLE
+________
+
+numbers  = (1, 2, 3)
+numbers[0] = 10
+print(numbers[0]) # turns an error because tuple is immutable 'not changeable'
+
+___________________
+TUPLE - UNPACKING
+___________________
+
+coordinates = (1, 2, 3)
+x = coordinates[0]
+y = coordinates[1]
+z = coordinates[2]
+
+x, y, z = corrdinates # this is the shortest line
+
+______________
+DICTIONARIES
+______________
+
+customer = {
+    "name" : "Rye Ryan",
+    "age" : 21,
+    "is_verified" : True
+}
+print(customer.get("birthdate", "May 13, 2001")
+
+customer["name"] = "amogus" # "name" : "Rye Ryan" become "name" : "amogus"
+
+_________________
+DIGITS MAPPING
+_________________
+
+phone = input("Phone: ")
+digits_mapping = {
+    "1" : "One",
+    "2" : "Two",
+    "3" : "Three",
+    "4" : "Four"
+}
+
+output = ""
+for ch in phone:
+    output += digits_mapping.get(ch, "!") + ""
+    # digits_mapping.get(ch, "!")
+print(output)
+
+________________
+EMOJI CONVERTER
+________________
+
+message = input(">")
+words = message.split(' ')
+emojis = {
+   ":)" : "happy emoji",
+   ":(" : "sad emoji"
+}
+output = ""
+for word in words:
+    output += emojis.get(word, word) + " "
+print(output)
+
+___________
+FUNCTIONS
+___________
+
+def greet_user(first_name, last_name):
+    print(f"Hi {first_name} {last_name}!")
+    print("Welcome Aboard")
+
+
+print("Start")
+greet_user(last_name="Ryan", first_name="Rye")
+print("Finish")
+__________________________
+
+def square(number):
+    print(number * number) # 9
+
+print(square(3)) # None
+
+__________________________
+
+def emoji_converter(message):
+    words = message.split(' ')
+    emojis = {
+       ":)" : "happy emoji",
+       ":(" : "sad emoji"
+    }
+    output = ""
+    for word in words:
+        output += emojis.get(word, word) + " "
+    return output
+
+message = input(">")
+print(emoji_converter(message))
+
+______________________
+CLASSES AND OBJECTS
+______________________
+
+class Point:
+    def move(self):
+        print("move")
+    def draw(self):
+        print("draw")
+
+point1 = Point()
+point1.draw()
+
+point1 = Point()
+point.x = 10
+point.y = 20
+print(point1.x)
+point1.draw()
+
+point2 = Point()
+point2.x = 1
+print(point2.x)
+
+____________________________________
+CLASSES AND OBJECTS - CONSTRUCTOR
+____________________________________
+
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+point = Point(10, 20)
+point.x = 11
+print(point.x) # 11
+
+____________________
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+    
+    def talk(self):
+        print(f"Hi i am {self.name}")
+
+rye = Person("Rye Ryan")
+rye.talk()
+
+amogus = Person("Amogus")
+amogus.talk()
+
+print(rye.name)
+
+_____________
+INHERITANCE
+_____________
+# 'Dry' - Don't Repeat Yourself
+
+
+class Mammal:
+  def walk(self):
+      print("walk")
+
+
+class Dog(Mammal): # Inherit all the methods design in Mammal class
+  def bark(self):
+      print("bark")
+
+
+class Cat(Mammal):
+    # pass # means nothing it use when the class is empty
+  def be_annoying(self):
+      print("annoying")
+
+dog1 = Dog()
+dog1.walk() # walk
+
+cat1 = Cat()
+cat1.be_annoying(self)
+
+__________
+MODULES
+__________
+
+# app.py
+
+import converters # access converters.py
+from converters import kg_to_lbs # this 'from' acting as import and 'import'  shows the functions inside the file
+
+print(converters.kg_to_lbs(70)) # 155.555...4
+
+# converters.py
+
+def lbs_to_kg(weight):
+    return weight * 0.45
+
+def kg_to_lbs(weight):
+    return weight / 0.45
+
+________________________
+
+from utils import find_max
+
+"""
+numbers = [10, 3, 6, 2]
+max = find_max(numbers)
+print(max) # 10 
+print(max(numbers) # 10 , it turns an error rename it as "maximum"
+"""
+
+# converters.py
+
+numbers = [10, 3, 6, 2]
+maximum = find_max(numbers)
+print(maximum(numbers)) # 10
+
+# utils.py
+
+def find_max(numbers):
+    maximum = numbers[0]
+    for number in numbers:
+        if number > maximum:
+            maximum = number
+    return maximum
+
+__________
+PACKAGES
+__________
+
+"""
+PACKAGE
+- Mens's
+1. Shoes - this is module
+2. T-Shirts - this is module
+3. Jackets - this is module
+- Women's
+- Kids'
+"""
+
+"""
+make an "ecommerce" folder
+much better to make package folder "ecommerce" because it contains "__init__.py"
+
+# shipping.py - METHOD 1
+
+def calc_shipping():
+    print("calc_shipping")
+
+# METHOD 2
+
+import ecommerce.shipping # 'ecommerce' is the package folder 'shipping' is the file
+ecommerce.shipping.calc_shopping() # calc_shippng
+
+# METHOD 3
+
+from ecommerce.shipping import calc_shipping 
+
+"""
+from "ecommerce" is package folder
+.shipping is this file name 'shipping.py'
+import calc_shipping is the function inside of this file
+"""
+
+calc_shipping()
+calc_shipping()
+calc_shipping()
+
+# METHOD 4
+
+from ecommerce import shipping
+
+shipping.calc_shipping()
+
+__________________________
+GENERATING RANDOM VALUES
+__________________________
+
+"""
+Search python 3 module index
+to locate the import file ExternalLibraries/python3.10 library root/....
+"""
+
+import random
+
+for i in range(3):
+    print(random.random()) # 0.423421413, 0.342342341, 0.325232530 *random output*
+
+for i in range(3):
+    print(random.randint(10, 20) # 20 19 11 *random output*
+
+__________________
+
+import random
+
+names = ['Rye', 'Ryan', 'BSCS']
+amogus = random.choice(names)
+print(amogus) *random output*
+
+__________________
+ROLL DICE RANDOM
+__________________
+
+import random
+
+class Dice:
+    def roll(self):
+        first = random.randint(1, 6)
+        second = random.randint(1, 6)
+        return first, second
+
+dice = Dice()
+print(dice.roll()) # (2, 5) *random output*
+        
+________________________
+FILES AND DIRECTORIES        
+________________________
+
+"""
+Absolute Path - start at the root directory C:\Files\Microoft
+Relative Path - starting current directory
+"""
+
+from pathlib import Path # 'Path' is class
+
+path = Path("ecommerce") # locate if theres a file existng in pycharm directory
+print(path.exists()) # True
+
+print(path.mkdir()) # 'mkdir' is 'make directory' or make a folder
+print(path.rmdir()) # 'rmdir' is remove a file from directory
+________________________
+
+"""
+SEARCH PATTERN
+
+'*' - means everything all file and directories
+'*.*' - get the current directory
+'*.py' - get all the python files
+'*.xls - get all the spreadsheets
+
+print(path.glob('*.py')) # <generator object Path.glob at 0x104604390
+
+
+from pathlib import Path
+
+path = Path()
+for file in path.glob('*.py'):
+    print(file) # shows all the python file names in directories
+
+______________
+PYPI AND PIP
+______________
+
+"""
+pypi.org
+PYPI - python package index
+
+terminal: $pip install oopenpyxl
+"""
+
+_____________________
+EXCEL SPREADSHEETS
+_____________________
+
+"""
+EXCEL FILE | transactions.xlsx
+
+transaction_id | product_id  | price
+1001                 1         $5.95     5.335   
+1002                 2         $6.95     6.255   
+1003                 3         $7.95     7.155   
+"""
+
+import openxyl as xl
+
+wb = xl.load_workbook('transactions.xlsx')
+sheet = wb['Sheet 1']
+cell = sheet['a1']
+sheet.cell(1, 1) # first row, first column
+
+print(cell.value) # transaction_id
+print(sheet.max_row) # 4, four rows
+
+for row in range(1, sheet.max_row + 1):# '+1' because if we make it as range(1, 4) it turns as 1, 2, 3 the '4' will be disregard
+    print(row) # 1  2  3  4
+
+for row in range(2, sheet.max_row + 1):
+    sheet.cell(row, 3)
+    print(cell.value) # 5.95  6.95  7.95
+
+
+for row in range(2, sheet.max_row + 1):
+    sheet.cell(row, 3)
+    corrected_price = cell.value * 0.9
+    corrected_price_cell = sheet.cell(row, 4)
+    corrected_price_cell.value = corrected_price
+
+
+wb.save('transaction2.xlsx') # save a new file and the column D has a 5.355  6.255  7.155
+
+___________________________________________
+
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+
+wb = xl.load_workbook('transactions.xlsx')
+sheet = wb['Sheet 1']
+
+for row in range(2, sheet.max_row + 1):
+    sheet.cell(row, 3)
+    corrected_price = cell.value * 0.9
+    corrected_price_cell = sheet.cell(row, 4)
+    corrected_price_cell.value = corrected_price
+
+values = Reference(sheet, 
+	  min_row=2, 
+	  max_row=sheet.max_row),
+	  min_col=4,
+	  max_col=4)
+
+chart = BarChart()
+chart.add_data(values)
+sheet.add_chart(chart, 'e2')
+
+wb.save('transaction2.xlsx') # shows a Bar Chart in this file
+
+______________________________________________
+
+import openpyxl as xl
+from openpyxl.chart import BarChart, Reference
+
+def process_workbook(filename):
+    wb = xl.load_workbook(filname)
+    sheet = wb['Sheet 1']
+
+    for row in range(2, sheet.max_row + 1):
+        sheet.cell(row, 3)
+    	corrected_price = cell.value * 0.9
+    	corrected_price_cell = sheet.cell(row, 4)
+        corrected_price_cell.value = corrected_price
+
+	values = Reference(sheet, 
+	  min_row=2, 
+	  max_row=sheet.max_row),
+	  min_col=4,
+	  max_col=4)
+
+   chart = BarChart()
+   chart.add_data(values)
+   sheet.add_chart(chart, 'e2')
+
+wb.save('transaction2.xlsx') # shows a Bar Chart in this file
