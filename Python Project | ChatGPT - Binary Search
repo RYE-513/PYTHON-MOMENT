@@ -64,3 +64,50 @@ This code defines a function called binary_search that takes an array of sorted 
 If the middle element of the search interval is less than the target value, the search interval is shifted to the right half of the array. If the middle element is greater than the target value, the search interval is shifted to the left half of the array. If the middle element is equal to the target value, the function returns the index of the middle element.
 
 In the example usage, we create an array arr and a target value x, and call the binary_search function with these values. The function returns the index of the target value in the array (if it is present), or -1 if the target value is not in the array. Finally, we print out a message indicating whether the target value was found or not.
+
+
+
+
+or
+
+def binary_search(arr, x):
+
+    l = 0
+
+    r = len(arr) - 1
+
+    while l <= r:
+
+        mid = (l + r) // 2
+
+        if arr[mid] == x:
+
+            return mid
+
+        elif arr[mid] < x:
+
+            l = mid + 1
+
+        else:
+
+            r = mid - 1
+
+    return -1
+
+# Main code
+
+arr = list(map(int, input("Enter a sorted list of numbers: ").split()))
+
+x = int(input("Enter the number you want to search for: "))
+
+result = binary_search(arr, x)
+
+if result == -1:
+
+    print("Element is not present in the array")
+
+else:
+
+    print("Element is present at index", result)
+
+
